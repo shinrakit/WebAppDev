@@ -1,2146 +1,523 @@
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head><meta charset="utf-8" /><title>
-	มหาวิทยาลัยพะเยา  : University of Phayao 
-</title><meta content="IE=10.000" http-equiv="X-UA-Compatible" /><meta charset="utf-8" />
-
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จิรกิตต์ หมูหล้า (แจ็ค) - Profile</title>
     
-  
-       <script src="cookie-consent/cookie-consent/src/cookieconsent.js"></script>
-        <script src="cookie-consent/cookie-consent/init.js"></script>
-
-      <meta name="robots" content="all" /><meta name="theme-color" content="purple" /><meta name="apple-mobile-web-app-capable" content="yes" /><meta name="google-site-verification" content="HpeITAMTfab3EmWLWhRVZXqKXgLBj9KhhdzSHFbKSik" />
-     <meta name="Keywords" lang="en" content="University, University of Phayao, UP, Thai University, Public University, 
-        Comprehensive University" />
-     <meta name="Keywords" lang="th" content="มหาวิทยาลัย , มหาวิทยาลัยพะเยา , พะเยา, มพ. มหาวิทยาลัยสวย, เรียนไหนดี" />
-     <meta name="Description" content="มหาวิทยาลัยพะเยา รับสมัครนักศึกษาใหม่ปี 68  เปิดสอน ปริญญาตรี ปริญญาโท ปริญญาเอก ภาคปกติ และภาคเสาร์-อาทิตย์ " />
-   
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  
-     
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-27269763-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-27269763-1'); 
-</script>
-
-
-    <!-- Google Tag Manager -->
-
-<!-- End Google Tag Manager -->
-
-	      <link href="img/logo_up32x.ico" rel="icon" type="img/logo_up32x.ico" /><link href="https://fonts.googleapis.com/css?family=Domine:400,700%7CRoboto:400,300,500,700,900" rel="stylesheet" type="text/css" /><link href="css/bootstrap.min.css" rel="stylesheet" media="screen" /><link href="css/font-awesome.min.css" rel="stylesheet" /><link href="css/owl.carousel.min.css" rel="stylesheet" media="screen" /><link href="css/owl.theme.default.min.css" rel="stylesheet" media="screen" /><link href="css/datepicker.css" rel="stylesheet" media="screen" /><link href="style.css" rel="stylesheet" media="screen" />
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <link href="css/lineclamp.css" rel="stylesheet" /><link href="cookie-consent/cookie-consent/src/cookieconsent.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Athiti:500" rel="stylesheet" />
-
-   
-    <style>.tag{
-    font-size: 14px;
-    padding: 8px 12px;
-    margin: 0 5px 5px 0;
-    line-height: 17px;
-    color: #ffff;
-    height: 32px;
-    float: left;
-    background-color: rgb(86, 14, 123);
-    border-radius: 30px;}
-
-</style>
+    <!-- 
+      CSS ทั้งหมดอยู่ในไฟล์เดียว (Internal Stylesheet)
+      ใช้ CSS Variables สำหรับการทำธีม (Light/Dark mode)
+    -->
     <style>
-          @media (min-width: 1200px) {
-            #page-heading .page-title {
-                padding-bottom: 30px;
-                
-            }
+        /* 1. CSS Variables (Theme) */
+        :root {
+            /* Light Mode (Default) */
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            /* เพิ่ม RGB components สำหรับ rgba() */
+            --card-bg-rgb: 255, 255, 255;
+            --text-color: #333333;
+            --heading-color: #111111;
+            --accent-color: #0056b3; /* สีน้ำเงินเข้ม */
+            --accent-glow: rgba(0, 86, 179, 0.4);
+            --subtle-text: #555555;
+            --border-color: rgba(234, 234, 234, 0.5); /* ปรับให้โปร่งแสงเล็กน้อย */
+            --shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+            --switch-bg: #ccc;
+            --switch-knob: #fff;
         }
-       
-        .header-row {
-                background: rgb(64 55 68);
-    color: rgba(255, 255, 255, .75);
-    /*background: rgb(86, 14, 123);
-    color: rgba(255, 255, 255, .75);*/
-}
-        .content-padding-xs {
-    padding-bottom: 0rem;
-  padding-top: 0rem; 
-}
-        .overlay-pattern {
-    z-index: 1;
-    position:  absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    padding: 0;
-    margin: 0;
-    background: url(mp4/bg-overlay-pattern.png);
-  
- 
-}
-        .list-services a {
-    display: block;
-    padding: 2.0rem 0;
-}
-        #secondary-nav .menu > .menu-item > a {
-  
-    font-size: 2.2rem;
-   
-}
-       #secondary-nav .sub-menu .menu-item > a {
-  
-    font-size: 1.8rem;
-   
-}
-       #footer {
-    background: rgb(86, 14, 123);
-    padding: 5.6rem 0;
-    color: #ffffff;
-    font-size: 1.2rem;
-}
-       p, li, span, div {
-    font-size: 1.8rem;
-}
-       #footer a {
-    color: #ffffff;
-    text-decoration: none;
-}
-       #footer a:hover {
-    color: #e9edea;
-}
-       #footer .widget-title {
-   
-    font-size: 1.8rem;
-   
-    color: rgba(255, 255, 255, .75);
-   
-}
-       #main-footer .widget {
 
-    margin-bottom: 0rem;
+        html.dark-mode {
+            /* Dark Mode Overrides */
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            /* เพิ่ม RGB components สำหรับ rgba() */
+            --card-bg-rgb: 30, 30, 30;
+            --text-color: #e0e0e0;
+            --heading-color: #ffffff;
+            --accent-color: #4dabf7; /* สีน้ำเงินสว่าง */
+            --accent-glow: rgba(77, 171, 247, 0.4);
+            --subtle-text: #aaaaaa;
+            --border-color: rgba(51, 51, 51, 0.5); /* ปรับให้โปร่งแสงเล็กน้อย */
+            --shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            --switch-bg: var(--accent-color);
+            --switch-knob: #1e1e1e;
+        }
 
-}
-        @media (min-width: 10px) {
-             #logo img {
-    
-    margin-bottom: 10px;
-}
-             #page-heading .page-title {
-    
-    font-size: 1.6rem;
-  
-}
-            
-            
-            }
-        @media (min-width: 480px) {
-            #main-nav .menu > .menu-item > a {
-   
-    font-size: 1.6rem;
-   
-}
+        /* 2. Base & Resets */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-               #logo img {
-    
-    margin-bottom: 10px;
+        html {
+            scroll-behavior: smooth;
+            /* ปรับขนาดฟอนต์ตาม viewport (Fluid Typography) */
+            font-size: calc(16px + 0.15vw);
+            /* ทำให้พื้นหลังหลักคงที่ แม้เนื้อหาจะเลื่อน */
+            background-color: var(--bg-color);
+        }
 
-}
-                #page-heading .page-title {
-    
-    font-size: 1.6rem;
-  
-}
-            }
+        body {
+            font-family: "Prompt", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Leelawadee", "Tahoma", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            /* ให้ body โปร่งใส เพื่อให้เห็น background-blobs */
+            background-color: transparent;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* NEW: Liquid Background Blobs */
+        .background-blobs {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1; /* อยู่หลังสุด */
+            filter: blur(100px); /* เบลอมากๆ */
+        }
         
-        @media (min-width: 768px) {
-
-            #page-heading .page-title {
-                font-size: 1.6rem;
-            }
-
-        }
-        @media (min-width: 992px) {
- #page-heading .page-title {
-                font-size: 2.5rem;
-            }
-
-        }
-        @media (min-width: 1200px) {
- #page-heading .page-title {
-                font-size: 2.5rem;
-            }
- 
-            .logo img {
-                width: 7%;
-            }
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.4;
+            will-change: transform;
         }
 
-         @media (min-width: 1499px) and (max-width: 1920px) {
+        .blob1 {
+            width: 450px;
+            height: 450px;
+            top: -50px;
+            left: -100px;
+            background: var(--accent-color);
+            animation: moveBlob1 25s infinite alternate ease-in-out;
+        }
+
+        .blob2 {
+            width: 350px;
+            height: 350px;
+            bottom: -100px;
+            right: -50px;
+            background: #ff6b6b; /* สีรอง (เช่น สีแดง/ส้ม) */
+            animation: moveBlob2 30s infinite alternate ease-in-out -5s; /* delay */
+        }
+
+        @keyframes moveBlob1 {
+            from { transform: translate(-50px, -50px) rotate(0deg); }
+            to { transform: translate(100px, 100px) rotate(180deg); }
+        }
+        @keyframes moveBlob2 {
+            from { transform: translate(50px, 50px) rotate(0deg); }
+            to { transform: translate(-100px, -100px) rotate(-180deg); }
+        }
+
+
+        /* 3. Layout & Main Components */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            position: sticky;
+            top: 0;
+            /* OLD: background-color: var(--card-bg); */
+            background-color: rgba(var(--card-bg-rgb), 0.75); /* Glass Effect */
+            backdrop-filter: blur(15px); /* Glass Effect */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            z-index: 10;
+            /* OLD: border-bottom: 1px solid var(--border-color); */
+            border-bottom: 1px solid var(--border-color); /* ใช้ border-color ที่โปร่งแสง */
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--accent-color);
+            font-weight: 500;
+            transition: opacity 0.2s ease;
+        }
+
+        nav a:hover, nav a:focus {
+            opacity: 0.7;
+        }
+
+        main > section {
+            /* OLD: background-color: var(--card-bg); */
+            background-color: rgba(var(--card-bg-rgb), 0.7); /* Glass Effect */
+            backdrop-filter: blur(20px); /* Glass Effect */
+            border-radius: 16px; /* มนขึ้นเล็กน้อย */
+            box-shadow: var(--shadow);
+            padding: 2.5rem;
+            margin-top: 2rem;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            /* OLD: border: 1px solid var(--border-color); */
+            border: 1px solid var(--border-color); /* ใช้ border-color ที่โปร่งแสง */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-bottom: 2rem;
+            font-size: 0.9rem;
+            color: var(--subtle-text);
+        }
+
+        /* 4. Dark Mode Toggle Switch */
+        .theme-switch-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .theme-switch {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 26px;
+        }
+
+        .theme-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--switch-bg);
+            border-radius: 34px;
+            transition: 0.4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 4px;
+            bottom: 4px;
+            background-color: var(--switch-knob);
+            border-radius: 50%;
+            transition: 0.4s;
+        }
+
+        input:checked + .slider {
+            background-color: var(--accent-color);
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(24px);
+        }
+
+        /* 5. Content Styling */
+        h1, h2 {
+            color: var(--heading-color);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            /* ทำให้ขอบเส้นจางลงเล็กน้อย */
+            border-image: linear-gradient(to right, var(--accent-color), transparent 80%) 1;
+        }
         
+        #home {
+            text-align: center;
+        }
 
-            .logo img {
-                width: 7%;
+        .profile-image-placeholder {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: var(--border-color);
+            margin: 0 auto 1.5rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--subtle-text);
+            font-size: 0.9rem;
+            text-align: center;
+            border: 4px solid var(--card-bg);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--subtle-text);
+            margin-top: 0.5rem;
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--card-bg);
+            padding: 0.75rem 1.5rem;
+            border-radius: 30px; /* ทรงแคปซูล (Pill shape) */
+            text-decoration: none;
+            font-weight: 500;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: none; /* ไม่มีขอบ */
+            box-shadow: 0 2px 10px var(--accent-glow); /* เพิ่ม Glow */
+        }
+
+        .button:hover, .button:focus {
+            transform: translateY(-3px) scale(1.03); /* ขยับและขยายเล็กน้อย */
+            box-shadow: 0 6px 15px var(--accent-glow); /* Glow เข้มขึ้น */
+        }
+
+        #about p {
+            margin-bottom: 1.5rem;
+        }
+
+        blockquote {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            border-left: 4px solid var(--accent-color);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-weight: 500;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        /* 6. Mobile Responsiveness */
+        @media (max-width: 600px) {
+            body {
+                /* เพิ่มขนาด font ฐานเล็กน้อยบนมือถือ */
+                font-size: 17px;
+            }
+            .container {
+                padding: 0.5rem;
+            }
+
+            main > section {
+                padding: 1.5rem;
+                margin-top: 1.5rem;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 0.5rem;
+                padding: 0.75rem;
+                position: static; /* อาจจะดีกว่าสำหรับจอมือถือเล็กๆ */
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
             }
         }
-
-         .btn-default {
-
-    background-color: #9C27B0;
-    border-color: #af2dc6;
-}
-         #button {
-	 font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-	 display: block;
-	 position: relative;
-	 background: #0084ff;
-	 color: white;
-	 font-size: 1.125em;
-	 border: 0.15em solid #0084ff;
-	 border-radius: 0.3em;
-	 text-transform: uppercase;
-	 padding: 0.25em 0.5em 0.25em 1.6em;
-	 text-align: center;
-	 font-weight: 500;
-	 text-decoration: none;
-	 letter-spacing: 0.025em;
-	 cursor: pointer;
-	 transition: inherit;
-	 transition: all 50ms linear;
-}
- #button .icon {
-	 position: absolute;
-	 top: 0;
-	 bottom: 0em;
-	 margin: auto 0;
-	 left: 1.4em;
-	 width: 1.5em;
-	 fill: white;
-	 height: 1.5em;
-	 display: block;
-	 transition: inherit;
-}
- #button:hover, body.inactive #button {
-	 color: #0084ff;
-	 background: transparent;
-}
- #button:hover .icon, body.inactive #button .icon {
-	 fill: #0084ff;
-}
- #button:hover:active, body.inactive #button:active {
-	 transform: scale(0.99);
-}
- 
-
     </style>
-    <!-- Facebook Pixel Code -->
-
-<!-- End Facebook Pixel Code -->
-   
-    
-
-     
-    
-       <link href="assets/css/StyleSheet.css" rel="stylesheet" />
-    <link href="css/an.css" rel="stylesheet" />
-    <link href="css/StyleSheetH.css" rel="stylesheet" />
-    <link href="css/sdg.css" rel="stylesheet" />
-
-     <style>
-        .round_image{
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 10px;
--webkit-box-shadow: #000 0 2px 10px;
--moz-box-shadow: #000 0 2px 10px;
-box-shadow: #000 0 2px 10px;
-}
-         .round_image2{
--webkit-border-radius: 2px;
--moz-border-radius: 2px;
-border-radius: 2px;
--webkit-box-shadow: #000 0 2px 10px;
--moz-box-shadow: #000 0 2px 10px; 
-box-shadow: #000 0 2px 10px;
-}
-         .badge-success {
-    color: #fff;
-    background-color: #28a745;
-}
-         .badge-info {
-    color: #fff;
-    background-color: #17a2b8;
-}
-    </style>
-    <style>
-       
-        #header {
-            min-height: 0px;
-        }
-
-        .modal-content {
-            background-color: #ffffffd6;
-        }
-               .linenews {
-                   font-family: 'Athiti', sans-serif;
-               
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    line-height: 24px;
-}
-
-               .linenews1 {
-                   font-family: 'Athiti', sans-serif;
-                      font-weight:700;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    line-height: 24px;
-}
-                 .linenews2 {
-                     font-family: 'Athiti', sans-serif;
-                     
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    line-height: 24px;
- 
-}
-
-               h1, .h2, .h3, h1, h2, h3 {
-     margin-top: 0px;
-   
-}
-               .blockquote {
-  padding: 10px;
- 
-}
-
-    </style>
- 
-    
-
-
-   <style>
-    .news-card {
-        background: #faf6fc;
-        padding: 20px 15px;
-        border-radius: 12px;
-        transition: 0.3s;
-        height: 100%;
-        position: relative;
-        margin-bottom: 30px;
-        border: 1px solid #f1e8fa;
-    }
-
-    .news-card:hover {
-        background: #f8f0fc;
-    }
-
-    .news-img-wrap {
-    position: relative; /* สำคัญมาก */
-    width: 100%;
-    padding-top: 52.33%; /* รองรับ 1200x628 */
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-    .news-img-wrap img {
-        position: absolute;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        object-fit: cover;
-    }
-
-    .news-tag {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: rgba(212, 175, 55, 0.9); /* สีทองโปร่ง */
-    color: #000;
-    padding: 5px 10px;
-    font-size: 11px;
-    font-weight: bold;
-    border-radius: 12px;
-    z-index: 2; /* เพื่อให้ลอยเหนือรูป */
-}
-
-    .news-card h4 {
-        color: #5f2b83;
-        font-weight: 600;
-        font-size: 16px;
-        margin-bottom: 8px;
-        min-height: 40px;
-    }
-
-    .news-meta {
-        font-size: 12px;
-        color: #a393b1;
-        margin-bottom: 5px;
-    }
-
-    .news-views {
-        font-size: 12px;
-        color: #b4a0cb;
-    }
-
-    .btn-readmore {
-        background: transparent;
-        border: none;
-        color: #7b3b95;
-        font-weight: bold;
-        font-size: 13px;
-        padding: 0;
-    }
-
-    .btn-readmore i {
-        margin-left: 4px;
-    }
-
-    .btn-readmore:hover {
-        color: #d4af37;
-        text-decoration: underline;
-    }
-    .readmore-wrap {
-    text-align: right;
-    margin-top: 10px;
-}
-</style>
-    <style>
-    /* เอฟเฟกต์เฟดอิน */
-    .fade-in {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    }
-
-    .fade-in.visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    /* เอฟเฟกต์ hover แบบสุภาพ */
-    .news-card {
-        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    }
-
-    .news-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 16px rgba(123, 59, 149, 0.1);
-    }
-</style>
-
-  <style>
-    .news-featured {
-    background: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(123, 59, 149, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .news-featured:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 18px rgba(123, 59, 149, 0.15);
-  }
-
-  .news-featured h4 {
-    color: #7b3b95;
-    font-weight: bold;
-  }
-
-  .news-featured p {
-    font-size: 14px;
-    color: #444;
-  }
-
-  .news-category {
-    font-size: 12px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #d4af37;
-    padding: 2px 8px;
-    border-radius: 12px;
-    display: inline-block;
-    margin-bottom: 8px;
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    z-index: 2;
-  }
-
-  .mini-news-each {
-    overflow: hidden;
-    padding: 5px 0;
-    height: 33.33%;
-  }
-
-  .mini-news {
-    background: #ffffff;
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    height: 100%;
-    display: flex;
-    align-items: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .mini-news:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
-  }
-
-  .mini-news h5 {
-    font-size: 14px;
-    font-weight: bold;
-    color: #7b3b95;
-    margin: 0 0 5px;
-    line-height: 1.3em;
-    max-height: 2.6em;
-    overflow: hidden;
-  }
-
-  .news-meta {
-    font-size: 11px;
-    color: #999;
-  }
-
-  .news-views {
-    font-size: 11px;
-    color: #a98ec2;
-    margin-top: 5px;
-  }
-
-  .mini-news .img-container {
-    position: relative;
-    width: 100%;
-    padding-top: 75%;
-    overflow: hidden;
-    border-radius: 5px;
-  }
-
-  .mini-news .img-container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .mini-news .col-xs-7 {
-    padding-left: 10px;
-  }
-
-  h3 {
-    font-size: 1.0em;
-
-}
-  @media (min-width: 1200px) {
-    .container {
-        width: 1270px;
-    }
-}
-  .h1, .h2, .h3, h1, h2, h3, .h5, h5  {
-     margin-top: 0px !important;
-
-}
-</style>
-  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="Bootstrap-Cookie-Alert-gh-pages/cookiealert.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
-  
 
-
-    <style>
-           .notification {
-    position: absolute;
-    background-color: #fb404b;
-    text-align: center;
-    border-radius: 10px;
-    min-width: 18px;
-    padding: 0 5px;
-    height: 18px;
-    font-size: 14px;
-    color: #fff;
-    font-weight: 700;
-    line-height: 18px;
-    top: 17px;
-    left: -5px;
-}
-       #logo {
-    padding: 0px 0;
-   
-}  
-
-
-      
-         </style>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link href="icon/StyleSheet.css" rel="stylesheet" />
-    <form method="post" action="./" id="form2">
-<div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5MDEwNTc4MzAPFgIeE1ZhbGlkYXRlUmVxdWVzdE1vZGUCARYCZg9kFgICAw9kFgICBQ9kFgICAw8WAh4LXyFJdGVtQ291bnQCBBYIZg9kFgJmDxUFAzgyN6sD4LiE4Liz4Liq4Lix4LmI4LiH4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4Lie4Liw4LmA4Lii4LiyIOC4l+C4teC5iCAyNTEyLzI1Njgg4Lil4LiH4Lin4Lix4LiZ4LiX4Li14LmIIDE1IOC4geC4seC4meC4ouC4suC4ouC4mSDguJ4u4LioLiAyNTY4ICDguYDguKPguLfguYjguK3guIcg4Lih4Lit4Lia4Lit4Liz4LiZ4Liy4LiI4LmD4Lir4LmJ4Lic4Li54LmJ4Lit4Liz4LiZ4Lin4Lii4LiB4Liy4Lij4Liq4LiW4Liy4Lia4Lix4LiZ4LiZ4Lin4Lix4LiV4LiB4Lij4Lij4Lih4LiB4Liy4Lij4LmA4Lij4Li14Lii4LiZ4Lij4Li54LmJIOC4m+C4j+C4tOC4muC4seC4leC4tOC4geC4suC4o+C5geC4l+C4meC4reC4mOC4tOC4geC4suC4o+C4muC4lOC4teC4oeC4q+C4suC4p+C4tOC4l+C4ouC4suC4peC4seC4ouC4nuC4sOC5gOC4ouC4shMyMDI1LTA5LTE4IDEzOjQ3OjE0QuC4hOC4s+C4quC4seC5iOC4h+C4oeC4q+C4suC4p+C4tOC4l+C4ouC4suC4peC4seC4ouC4nuC4sOC5gOC4ouC4shvguIHguK3guIfguIHguI7guKvguKHguLLguKJkAgEPZBYCZg8VBQM4MjaHA+C4hOC4s+C4quC4seC5iOC4h+C4oeC4q+C4suC4p+C4tOC4l+C4ouC4suC4peC4seC4ouC4nuC4sOC5gOC4ouC4siDguJfguLXguYggMjUxMS8yNTY4IOC4peC4h+C4p+C4seC4meC4l+C4teC5iCAxNSDguIHguLHguJnguKLguLLguKLguJkg4LieLuC4qC4gMjU2OCAg4LmA4Lij4Li34LmI4Lit4LiHIOC4oeC4reC4muC4reC4s+C4meC4suC4iOC5g+C4q+C5ieC4nOC4ueC5ieC4iuC5iOC4p+C4ouC4reC4mOC4tOC4geC4suC4o+C4muC4lOC4tSDguJvguI/guLTguJrguLHguJXguLTguIHguLLguKPguYHguJfguJnguK3guJjguLTguIHguLLguKPguJrguJTguLXguKHguKvguLLguKfguLTguJfguKLguLLguKXguLHguKLguJ7guLDguYDguKLguLIg4LiJ4Lia4Lix4Lia4LiX4Li14LmIIDITMjAyNS0wOS0xOCAxMzo0NDoxNkLguITguLPguKrguLHguYjguIfguKHguKvguLLguKfguLTguJfguKLguLLguKXguLHguKLguJ7guLDguYDguKLguLIb4LiB4Lit4LiH4LiB4LiO4Lir4Lih4Liy4LiiZAICD2QWAmYPFQUDODI1+wLguITguLPguKrguLHguYjguIfguKHguKvguLLguKfguLTguJfguKLguLLguKXguLHguKLguJ7guLDguYDguKLguLIg4LiX4Li14LmIIDI1MTAvMjU2OCDguKXguIfguKfguLHguJnguJfguLXguYggMTUg4LiB4Lix4LiZ4Lii4Liy4Lii4LiZIOC4ni7guKguIDI1NjggIOC5gOC4o+C4t+C5iOC4reC4hyDguKHguK3guJrguK3guLPguJnguLLguIjguYPguKvguYnguKPguK3guIfguK3guJjguLTguIHguLLguKPguJrguJTguLUg4Lib4LiP4Li04Lia4Lix4LiV4Li04LiB4Liy4Lij4LmB4LiX4LiZ4Lit4LiY4Li04LiB4Liy4Lij4Lia4LiU4Li14Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4Lie4Liw4LmA4Lii4LiyIOC4ieC4muC4seC4muC4l+C4teC5iCAyEzIwMjUtMDktMTggMTM6NDM6MTlC4LiE4Liz4Liq4Lix4LmI4LiH4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4Lie4Liw4LmA4Lii4LiyG+C4geC4reC4h+C4geC4juC4q+C4oeC4suC4omQCAw9kFgJmDxUFAzgyNL8F4LiE4Liz4Liq4Lix4LmI4LiH4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4Lie4Liw4LmA4Lii4LiyIOC4l+C4teC5iCAyNTA5LzI1Njgg4Lil4LiH4Lin4Lix4LiZ4LiX4Li14LmIIDE1IOC4geC4seC4meC4ouC4suC4ouC4mSDguJ4u4LioLiAyNTY4IOC5gOC4o+C4t+C5iOC4reC4hyDguKHguK3guJrguK3guLPguJnguLLguIjguKvguJnguYnguLLguJfguLXguYjguYPguKvguYnguKPguK3guIfguK3guJjguLTguIHguLLguKPguJrguJTguLUg4LmB4Lil4Liw4Lic4Li54LmJ4LiK4LmI4Lin4Lii4Lit4LiY4Li04LiB4Liy4Lij4Lia4LiU4Li1IOC4geC4s+C4geC4seC4muC4geC4suC4o+C4muC4o+C4tOC4q+C4suC4oyDguKrguLHguYjguIfguIHguLLguKMg4LmB4Lil4Liw4Lib4LiP4Li04Lia4Lix4LiV4Li04LiB4Liy4Lij4LmB4LiX4LiZ4Lit4LiY4Li04LiB4Liy4Lij4Lia4LiU4Li14Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4Lie4Liw4LmA4Lii4LiyIOC5geC4peC4sOC4iuC5iOC4p+C4ouC4geC4s+C4geC4seC4muC4lOC4ueC5geC4peC4geC4suC4o+C4m+C4j+C4tOC4muC4seC4leC4tOC4h+C4suC4meC5geC4l+C4meC4reC4mOC4tOC4geC4suC4o+C4muC4lOC4teC4oeC4q+C4suC4p+C4tOC4l+C4ouC4suC4peC4seC4ouC4nuC4sOC5gOC4ouC4siDguInguJrguLHguJrguJfguLXguYggMhMyMDI1LTA5LTE4IDEzOjQyOjA0QuC4hOC4s+C4quC4seC5iOC4h+C4oeC4q+C4suC4p+C4tOC4l+C4ouC4suC4peC4seC4ouC4nuC4sOC5gOC4ouC4shvguIHguK3guIfguIHguI7guKvguKHguLLguKJkZHki+wy6XBXP3gL0KMetnnEf8kNzzlCLPyrahuvDGWby" />
-</div>
-
-
-<script src="zulu_cms/script.js" type="text/javascript"></script>
-<div class="aspNetHidden">
-
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
-</div>
- 	<div id="site">
-		  	<header id="header" role="banner">
-		  		<div class="header-row clearfix">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-12 absolute-header text-uppercase">
-								<div class="pull-left"><i class="fa fa-map-marker"></i>UNIVERSITY OF PHAYAO, THAILAND</div>
-								<div class="pull-right">
-
-                                     <span  class="btn btn-info btn-sm" style="border-radius: 20px;"><a style="color:white"   href="https://vrtour.up.ac.th/">&nbsp;&nbsp;360 UP VR-Tour&nbsp;&nbsp; </a></span>
-                                   <span  class="btn btn-danger btn-sm" style="border-radius: 20px;"><a style="color:white"   href="https://admission.up.ac.th/">&nbsp;&nbsp;สมัครเรียน&nbsp;&nbsp; <i class="fa fa-phone" aria-hidden="true"></i> 0 5446 6666</a></span>
-
-									<span class="weather"><a   href="https://www.up.ac.th/en/"><img src="img/en.png" alt="en" /></a></span>
-									
-								</div>
-							</div><!-- .absolute-header -->
-						</div><!-- .row -->
-					</div><!-- .container -->
-					<nav role="navigation" id="main-nav">
-						<div class="container">
-							<div class="row">
-								<div class="col-xs-12">
-                                
-                                 
-									<a style="margin-top:10px" href="https://www.up.ac.th/" id="logo"><img src="icon/up.png" alt="logo university phayao"/></a>
-									<input type="checkbox" id="toggle-main-nav" class="toggle-nav-input"/>
-									<ul id="menu-main-menu" class="menu">
-                                            <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item current_page_item">
-                                                <a href="https://www.up.ac.th/"><i class="fa fa-home"></i><span class="visible-xs-inline">หน้าหลัก</span></a>
-                                            </li>
-
-                                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-parent-item">
-                                                <a href="#">เกี่ยวกับเรา</a>
-
-                                                <ul class="sub-menu">
-                                                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                        <a href="Intro_history.aspx">ประวัติความเป็นมา</a>
-                                                    </li>
-                                                       <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                        <a href="Intro_Symbol.aspx">สัญลักษณ์ของมหาวิทยาลัย</a>
-                                                    </li>
-                                                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                        <a href="Intro_About2.aspx">ปรัชญา / ปณิธาน / พันธกิจ / วิสัยทัศน์</a>
-                                                    </li>
-                                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                        <a href="Intro_Welcome.aspx">สารจากอธิการบดี</a>
-                                                    </li>
-                                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                        <a href="Intro_Organizational.aspx">โครงสร้างองค์กร</a>
-                                                    </li>
-                                                   
-                                                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-parent-item">
-                                                        <a href="#">ผู้บริหารมหาวิทยาลัยพะเยา</a>
-                                                        <ul class="sub-menu">
-                                                           
-                                                             
-                                                             <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                                <a href="UP_President.aspx">ประวัติอธิการบดี</a>
-                                                            </li>
-                                                             <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                                <a href="Intro_Executives.aspx">ทำเนียบอธิการบดี</a>
-                                                            </li>
-                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                                <a href="https://council.up.ac.th/office/council-board">กรรมการสภามหาวิทยาลัย</a>
-                                                            </li>
-                                                              <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                                <a href="https://council.up.ac.th/office/council-directory">ทำเนียบคณะกรรมการสภามหาวิทยาลัย</a>
-                                                            </li>
-                                                           
-                                                                <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                                <a href="UP_Board.aspx">ผู้บริหาร</a>
-                                                          
-                                                                      
-                                                            </li>
-                                                              
-                                                          
-                                                                                                                      
-                                                        </ul>
-                                                    </li>
-
-                                                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-parent-item">
-                                                        <a href="#">การบริหาร</a>
-                                                        <ul class="sub-menu">
-                                                           
-                                                             
-                                                            
-                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                                <a href="IntroEtcup.aspx?tab=Strategic_67">แผนยุทธศาสตร์</a>
-                                                            </li>
-                                                             <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                                <a href="Intro_Authority.aspx">อำนาจหน้าที่</a>
-                                                            </li>
-
-
-                                                               <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                               <a href="Intro_Rule.aspx">กฎหมายที่เกี่ยวข้อง</a>
-                                                            </li>
-                                                          
-                                                               
-                                                       <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                          <a href="report-audit.aspx">รายงานผลการดำเนินงานของคณะกรรมการตรวจสอบ</a>
-                                                            </li>
-
-
-                                                               <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                           <a href="No-gift-Report.aspx"> รายงานผลตามนโยบาย No gift</a>
-                                                            </li>
-                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                           <a href="report-receiving.aspx"> รายงานการรับทรัพย์สินหรือประโยชน์อื่นใดโดยธรรมจรรยา</a>
-                                                            </li>
-                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                        <a href="IntroPDPA.aspx?tab=PDPA66">การคุ้มครองข้อมูลส่วนบุคคล (PDPA)</a>
-                                                            </li>
-                                                          
-                                                                                                                      
-                                                        </ul>
-                                                    </li>
-
-
-
-
-
-
-                                                  
-                                                
-                                                
-                                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                        <a href="Introetc.aspx?tab=Intro_etc001_67">แผน/มาตรการต่างๆ</a>
-                                                    </li>
-                                                    
-
-                                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-parent-item">
-                                                        <a href="#">วัฒนธรรมองค์กร</a>
-                                                        <ul class="sub-menu">
-
-                                                              <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                            
-                                                                <a href="No-Gift-Policy.aspx">ประกาศเจตนารมณ์นโยบาย No Gift Policy </a>
-
-                                                            </li>
-                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                            
-                                                                <a href="Organization-Culture.aspx">การเสริมสร้างวัฒนธรรมองค์กร</a>
-
-                                                            </li>
-                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
-
-                                                                <a href="Participation.aspx">การเปิดโอกาสการมีส่วนร่วม</a>
-
-                                                            </li>
-
-                                                           
-
-
-
-                                                        </ul>
-                                                    </li>
-
-                                                   
-                                                   
-                                                      
-
-
-                                                     
-                                                 
-
-                                                     
-
-                                                 
-                                                 
-                                                       <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                                <a href="https://vrtour.up.ac.th/">360 UP</a>
-                                                            </li>
-                                                </ul>
-
-                                                
-
-                                            </li>
-                                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                                                <a href="NewsTopAwardAll.aspx">รางวัล</a>
-                                                
-                                            </li>
-
-
-
-                                           <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                                                <a href="#">ประมวลจริยธรรม </a>
-
-                                                <ul class="sub-menu">
-                                                    
-                                                   
-                                                
-                                                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                        <a   href="Ethics-Code.aspx">ประมวลจริยธรรมสำหรับเจ้าหน้าที่ของรัฐ</a>
-                                                    </li>
-
-                                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                   
-                                                        <a   href="Ethics-d.aspx">การขับเคลื่อนจริยธรรม</a>
-                                                    </li>
-                                                    
-                                                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                   
-                                                         <a   href="Ethics-assessment.aspx">การประเมินจริยธรรมเจ้าหน้าที่ของรัฐ</a>
-                                                    </li>
-                                                   
-
-      
-                                                   
-                                                </ul>
-                                            </li>
-                                          
-
-
-
-
-
-                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                                                <a href="#">บุคลากร</a>
-
-                                                <ul class="sub-menu">
-                                                    
-                                                   
-                                                
-                                                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                        <a   href="https://outlook.office.com/">อีเมลสำหรับบุคลากร</a>
-                                                    </li>
-
-                                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                   
-                                                        <a   href="Manual_P.aspx">คู่มือและมาตรฐานการปฏิบัติงาน</a>
-                                                    </li>
-                                                    
-                                                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                   
-                                                         <a   href="Manual_PS.aspx">คู่มือมาตรฐานการให้บริการ</a>
-                                                    </li>
-                                                   
-
-                                                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-parent-item">
-                                                        <a href="#">การให้บริการ</a>
-                                                        <ul class="sub-menu">
-
-
-
-
-
-                                                            
-                                                              <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                                    <a href="ServiceStatistics.aspx">ข้อมูลเชิงสถิติการให้บริการ</a>
-                                                                     
-                                                                   </li>
-
-
-                                                           
-
-                                                            
-                                                            
-                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                                <a href="#">คู่มือด้านผลิตบัณฑิต</a>
-                                                            </li>
-                                                           
-                                                                                                                      
-                                                        </ul>
-                                                    </li>
-
-                                              
-
-
-
-                                                     <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-parent-item">
-                                                        <a href="#">การบริหารและพัฒนาทรัพยากรบุคคล</a>
-                                                        <ul class="sub-menu">
-                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                                <a href="management-hr.aspx">แผนการบริหารและพัฒนาทรัพยากรบุคคล</a>
-                                                            </li>
-                                                         
-
-                                                              <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                               
-
-                                                                  <a href="hr-report.aspx">รายงานผลการบริหารและพัฒนาทรัพยากรบุคคล</a>
-                                                                   </li>
-                                                           
-                                                            
-
-                                                            
-                                                                  
-                                                             <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                                    <a href="IntroHRM.aspx?tab=HRM_001_65">หลักเกณฑ์การบริหารและพัฒนาทรัพยากรบุคคล</a>
-                                                                       
-                                                                   </li>
-                                                          
-                                                      
-                                                                                                              
-                                                        </ul>
-                                                    </li>
-                                                   
-                                                
-
-
-
-                                                
-                                                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                        <a   href="ManualUp.aspx">คู่มือและมาตรฐาน มคอ.</a>
-                                                    </li>
-                                                       <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                        <a   href="AccreditationCourses.aspx">การรับรองหลักสูตรการศึกษา</a>
-                                                    </li>
-                                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                        <a   href="http://www.personnel.up.ac.th">สวัสดิการ</a>
-                                                    </li>
-                                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                        <a   href="https://finance.up.ac.th">การเงิน</a>
-                                                    </li>
-                                                   
-                                                    
-
-
-                                                  
-                                                  
-                                                  
-                                                   
-
-                                                   
-                                                </ul>
-                                            </li>
-                                          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                                                <a href="#">นิสิต</a>
-                                                <ul class="sub-menu">
-
-                                                   
-                                                     <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                        <a href="Student_Manual.aspx">คู่มือนิสิต</a>
-                                                    </li>
-
-                                                    
-                                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                        <a href="Std_Manual.aspx">คู่มือมาตรฐานการให้บริการ</a>
-                                                    </li>
-
-                                                     <li class="menu-item menu-item-type-post_type menu-item-object-page">	
-                                                        <a   href="https://outlook.office.com/mail/">อีเมลสำหรับนิสิต</a>
-                                                    </li>
-                                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                        <a   href="http://www.reg.up.ac.th/">วิชาการ</a>
-                                                    </li>
-                                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                        <a href="http://www.dsa.up.ac.th">กิจกรรม</a>
-                                                    </li>
-                                                 
-                                                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-parent-item">
-                                                        <a href="#">ทุนการศึกษา</a>
-                                                        <ul class="sub-menu">
-
-                                                             <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                                <a   href="http://pr.doga.up.ac.th/Affairs">กองกลาง งานวิเทศสัมพันธ์</a>
-                                                            </li>
-                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                                <a   href="https://does.up.ac.th/">กองบริการการศึกษา</a>
-                                                            </li>
-                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                                <a   href="https://dsq.up.ac.th/SHIP">กองพัฒนาคุณภาพนิสิตและนิสิตพิการ</a>
-                                                            </li>
-                                                             
-                                                                                                                      
-                                                        </ul>
-                                                    </li>
-                                                    
-                                                       <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-parent-item">
-                                                        <a href="#">หน่วยงานนิสิต</a>
-                                                        <ul class="sub-menu">
-
-                                                             <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                                <a   href="https://www.facebook.com/up.stc/">องค์การนิสิต</a>
-                                                            </li>
-                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                               <a   href="https://www.facebook.com/UPSTUDENTUNION/">สภานิสิต</a>
-                                                            </li>
-                                                            <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                                <a   href="https://www.facebook.com/%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%87-%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B8%9E%E0%B8%B0%E0%B9%80%E0%B8%A2%E0%B8%B2-2281442375404137/">เวียง มหาวิทยาลัยพะเยา</a>
-                                                            </li>
-                                                               <li class="menu-item menu-item-type-custom menu-item-object-custom">
-                                                                <a   href="https://www.facebook.com/%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%A7%E0%B8%B1%E0%B8%95%E0%B8%A3%E0%B8%99%E0%B8%B4%E0%B8%AA%E0%B8%B4%E0%B8%95-%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B8%9E%E0%B8%B0%E0%B9%80%E0%B8%A2%E0%B8%B2-168783297003068/">สารวัตรนิสิต</a>
-                                                            </li>
-                                                             
-                                                                                                                      
-                                                        </ul>
-                                                    </li>
-                                                    
-
-                                                   
-                                                </ul>
-                                            </li>
-                                  
-
-                                          <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                                                <a   href="https://iservice.up.ac.th/alumni">ศิษย์เก่า</a>
-                                                
-                                            </li>
-                                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                                                <a   href="e-service.aspx">e-Service</a>
-                                                
-                                            </li>
-                                        
-
-
-
-                                              <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children">
-                                                <a href="#">ติดต่อเรา</a>
-                                                  <ul class="sub-menu">
-                                                      <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                          <a href="contact.aspx">ที่อยู่</a>
-                                                      </li>
-                                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                          <a href="SocialNetwork.aspx">Social network</a>
-                                                      </li>
-                                                      <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                          <a href="FAQ_UP.aspx">คำถามที่พบบ่อย</a>
-                                                      </li>
-                                                      <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                          <a href="Contact_Nonumber.aspx">เบอร์โทรภายใน</a>
-                                                      </li>
-
-                                                      <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                          <a href="main-complaint.aspx">ช่องทางแจ้งข้อร้องเรียนการทุจริต</a>
-                                                      </li>
-
-
-                                                    
-                                                    <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                          <a href="GeneralForm.aspx">ช่องทางแจ้งข้อร้องเรียนทั่วไป / แนะนำติชม</a>
-                                                      </li>
-
-                                                   
-
-                                                      <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                          <a href="QuDa.aspx">ช่องทาง ถาม-ตอบ</a>
-                                                      </li>
-
-                                                      <li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                                          <a href="electronic-channels.aspx"> ช่องทางอิเล็กทรอนิกส์สำหรับติดต่อมหาวิทยาลัยพะเยา</a>
-                                                      </li>
-
-                                                     
-
-
-                                                    
-
-                                                   
-                                                  </ul>
-                                            </li>
-
-
-
-
-
-                                                             
-                                        </ul><!-- .menu -->
-								</div><!-- .col-xs-12 -->
-							</div><!-- .row -->
-						</div><!-- .container -->
-						<!-- #search-form -->
-					</nav><!-- #main-nav -->
-
-
-					<nav role="navigation" id="secondary-nav">
-						<div class="container">
-							<input type="checkbox" class="toggle-nav-input" id="toggle-secondary-nav"/>
-							<ul class="menu">
-								<li class="menu-item">
-									<a style="padding-top:12px;padding-bottom:12px;" href="#">สมัครเข้าศึกษา </a>
-									
-                                    <ul class="sub-menu ">
-
-
-                                                                                         
-										<li style="padding-left:20px;" class="menu-item menu-item-type-post_type menu-item-object-page">
-											<a   href="https://admission.up.ac.th">ผู้สนใจเข้าศึกษา</a>
-										</li>
-
-										<li style="padding-left:20px;" class="menu-item menu-item-type-post_type menu-item-object-page">
-											<a   href="https://admission.up.ac.th/bachelor/guidance">สำหรับครูแนะแนว</a>
-										</li>
-										
-									</ul>
-</li>
-                                 <li class="menu-item">
-									<a style="padding-top:12px;padding-bottom:12px;" href="#">หลักสูตร </a>
-									
-                                    <ul class="sub-menu ">
-
-
-                                       <li style="padding-left:40px;" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="bachelors-degree.aspx">ปริญญาตรี</a></li>
-                                             <li style="padding-left:40px;" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="masters-degree.aspx">ปริญญาโท</a></li>
-                                             <li style="padding-left:40px;" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="doctoral-degree.aspx">ปริญญาเอก</a></li>
-                                         <li style="padding-left:40px;" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="Other-educational-management.aspx">หลักสูตรระยะสั้น</a></li>
-										
-									</ul>
-</li>
-								
-								<li class="menu-item">
-									<a style="padding-top:12px;padding-bottom:12px;" href="UP_All.aspx">ส่วนงาน <em></em></a>
-									
-								</li>
-								<li class="menu-item">
-									<a style="padding-top:12px;padding-bottom:12px;" href="#">ข่าว<em></em></a>
-									<ul class="sub-menu ">
-										<li class="menu-item menu-item-type-post_type menu-item-object-page">
-											 <a href="UP_News.aspx">ข่าวประชาสัมพันธ์</a>
-										</li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-											 <a href="Announce.aspx">ข่าวประกาศ</a>
-										</li>
-
-                                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-											 <a href="UP_Event_All.aspx">ปฏิทินกิจกรรม</a>
-										</li>
-										<li class="menu-item menu-item-type-post_type menu-item-object-page">
-                                            
-                                             <a href="procurement-supplies.aspx" >การจัดซื้อจัดจ้างพัสดุ</a>
-										   
-										</li>
-										
-										<li class="menu-item menu-item-type-post_type menu-item-object-page">
-											<a href="http://www.personnel.up.ac.th/job.aspx">ข่าวรับสมัครงาน</a>
-										</li>
-                                        	<li class="menu-item menu-item-type-post_type menu-item-object-page">
-											   <a href="UP News.aspx">UP News</a>
-										</li>
-                                   
-                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-											   <a href="UP_Life.aspx">UP Life</a>
-										</li>
-                                          
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-											    <a href="NewsTopClipAll.aspx">VDO Clips</a>
-										</li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-											    <a href="UP_News.aspx?StrategicID=8">ความเป็นสากล</a>
-										</li>
-
-									</ul>
-								</li>
-                               
-								<li class="menu-item">
-									<a style="padding-top:12px;padding-bottom:12px;" href="#">วิจัย <em></em></a>
-									<ul class="sub-menu ">
-                                          <li class="menu-item menu-item-type-post_type menu-item-object-page">
-											<a href="http://wwmms.up.ac.th/research/uprm/graphprotfolio"  >ผลงานตีพิมพ์เผยแพร่</a>
-										</li>
-                                        	<li class="menu-item menu-item-type-post_type menu-item-object-page">
-											<a   href="http://wwmms.up.ac.th">ฐานข้อมูลงานวิจัย</a>
-										</li>
-									
-										
-
-                                      
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-											<a href="http://wwmms.up.ac.th/research/uprm/result">โครงการวิจัย</a>
-										</li>
-                                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-											<a href="https://li01.tci-thaijo.org/index.php/journalup">วารสารนเรศวรพะเยา</a>
-										</li>
-
-                                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-											<a href="https://so03.tci-thaijo.org/index.php/Humanties-up">วารสารมนุษยศาสตร์และสังคมศาสตร์ มหาวิทยาลัยพะเยา</a>
-										</li>
-
-                                     
-										
-								
-									</ul>
-								</li>
-                                 <li class="menu-item">
-									<a style="padding-top:12px;padding-bottom:12px;" href="#">ความเป็นสากล <em></em></a>
-									<ul class="sub-menu ">
-                                        
-                                         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-											<a   href="https://www.up.ac.th/UP_News.aspx?StrategicID=8">ข่าวสาร ความเป็นสากล</a>
-										</li>
-                                          <li class="menu-item menu-item-type-post_type menu-item-object-page">
-											<a   href="http://pr.doga.up.ac.th/Affairs/Main/Defaultpage/default.aspx">ข่าวทุนการศึกษาต่างประเทศ / ปฏิทินกิจกรรม</a>
-										</li>
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-											<a   href="http://pr.doga.up.ac.th/Affairs/Main/FORM/FormListReadMOU.aspx">Partnership </a>
-
-										</li>
-                                          
-
-                                        
-                                        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-											<a   href="http://pr.doga.up.ac.th/Affairs/Main/FORM/rptPersonal.aspx">สรุปงานด้านการเดินทางต่างประเทศ</a>
-										</li>
-
-                                       
-
-                                      
-                                      
-
-                                      
-                                     
-                                        
-                                       
-
-                                     
-										
-								
-									</ul>
-								</li>
-                                <li class="menu-item">
-									<a style="padding-top:12px;padding-bottom:12px;" href="https://elearning.up.ac.th/"  >e-Learning</a>
-									
-								</li>
-                                  
-					        </ul><!-- .menu -->
-						</div><!-- .container -->
-					</nav><!-- #secondary-nav -->
-					<label class="toggle-nav-label" for="toggle-main-nav"><i class="fa fa-bars fa-lg"></i> เมนู</label>
-					<label class="toggle-nav-label" for="toggle-secondary-nav"><i class="fa fa-info-circle fa-lg"></i> บริการ</label>
-				</div><!-- .header-row -->
-                   		
-                 
-    
-
-				<!-- .booking-row -->
-		  	</header><!-- #header -->
+    <!-- NEW: Liquid Background -->
+    <div class="background-blobs">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">หน้าแรก</a></li>
+                <li><a href="#about">เกี่ยวกับ</a></li>
+                <li><a href="#contact">ติดต่อ</a></li>
+            </ul>
+        </nav>
+
+        <!-- Dark Mode Toggle -->
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="dark-mode-toggle" aria-label="Toggle Dark Mode">
+                <input type="checkbox" id="dark-mode-toggle" />
+                <span class="slider"></span>
+            </label>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Section 1: Hero / Introduction -->
+        <section id="home" aria-labelledby="main-heading">
             
- 
-    <style>
-        .content-padding-xxl {
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-}
-
-        .content-padding-lg {
-    padding-bottom: 3.8rem; 
-   padding-top: 3.8rem; 
-}
-
-        .content-padding-xl {
-    padding-bottom: 5rem;
-    padding-top: 5rem;
-}
-    </style>
-
-  
-		  		<section  class="fullwidth-row bg-11 cover fixed">
-			  		<div class="container-fluid content-padding-xxl">
-			  			<div class="row animated">
-			  				<div class="col-lg-12 text-center">
-                                  <div id="maxslide2" class="gallery-carousel">
-                                         <div class="item">
-                                          <a href="#">
-                                              <img src="slide/2568/QSWorldUniRanking2026-v1.jpg" alt="QSWorldUniRanking2026 มหาวิทยาลัยพะเยา" class="wp-image img-responsive" style="width: 100%" /></a>
-                                        
-                                          <div>
-                                              <h3 style="margin: 0rem 0 0rem;">QS World University Rankings 2026</h3>
-
-
-                                          </div>
-                                      </div>
-
-                                      <div class="item">
-                                          <a href="#">
-                                              <img src="slide/2568/Banner-WUR-2026-012.jpg" alt="THE Impact Rankings 2025" class="wp-image img-responsive" style="width: 100%" /></a>
-
-                                          <div>
-                                              <h3 style="margin: 0rem 0 0rem;">TIME HIGHER EDUCATION</h3>
-
-
-                                          </div>
-                                      </div>
-                                           <div class="item">
-                                          <a href="https://www.up.ac.th/NewsRead.aspx?itemID=34799">
-                                              <img src="slide/2568/UP-ImpactRnaking-2025.jpg" alt="UI_Green" class="wp-image img-responsive" style="width: 100%" /></a>
-
-
-                                          <div>
-                                              <h3 style="margin: 0rem 0 0rem;">THE Impact Rankings 2025</h3>
-
-
-                                          </div>
-                                      </div>
-                                      <div class="item">
-                                          <a href="https://www.up.ac.th/NewsRead.aspx?itemID=34342">
-                                              <img src="slide/2567/Banner-WUR-2025-01.jpg" alt="THE Asia University Rankings 2025" class="wp-image img-responsive" style="width: 100%" /></a>
-
-                                          <div>
-                                              <h3 style="margin: 0rem 0 0rem;">THE Asia University Rankings 2025</h3>
-
-
-                                          </div>
-                                      </div>
-
-
-                                   
-
-
-
-
-
-
-                                      <div class="item">
-                                          <a href="https://www.up.ac.th/NewsRead.aspx?itemID=33461">
-                                              <img src="slide/2567/qs.jpg" alt="QS World University Rankings Sustainability 2025" class="wp-image img-responsive" style="width: 100%" /></a>
-
-
-                                          <div>
-                                              <h3 style="margin: 0rem 0 0rem;">QS World University Rankings Sustainability 2025</h3>
-
-
-                                          </div>
-                                      </div>
-
-                                      <div class="item">
-                                          <a href="https://www.up.ac.th/NewsRead.aspx?itemID=33460">
-                                              <img src="slide/2567/UI_Green.jpg" alt="UI_Green" class="wp-image img-responsive" style="width: 100%" /></a>
-
-
-                                          <div>
-                                              <h3 style="margin: 0rem 0 0rem;">UI Green Metric 2024</h3>
-
-
-                                          </div>
-                                      </div>
-
-
-
-
-
-
-                                 
-
-
-
-                                      <div class="item">
-
-
-                                          <a href="#">
-                                              <img src="slide/2568/148291.jpg" alt="scimago 2025 " class="wp-image img-responsive" style="width: 100%" /></a>
-
-
-                                          <div>
-                                              <h3 style="margin: 0rem 0 0rem;">Scimago 2025</h3>
-                                          </div>
-                                      </div>
-
-                                      
-                                    
-
-                                  </div>
-			  				</div>
-			  			</div>
-			</div>
-		  		</section>
-
-
-
-     
-       
-		  	<article id="content">
-			   
-    
-    
-    <section class="fullwidth-row  fixed" id="subslide" style="background-image:none;  background-color:#026e01;  -webkit-transition: background 1s; transition: background 2s; ">
-    
-          
-            
-          <div class="container animated" style="padding-bottom:20px;padding-top:20px;">
-
-
-
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
-   
-    <ol class="carousel-indicators" style="text-align: center;">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1" ></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2" ></li>
-         <li data-target="#carousel-example-generic" data-slide-to="3" ></li>
-
-     
-      
-
-    
-        
-
-
-     
-         
-       
-       
-     
-  
-    
-    </ol>
-     <div class="carousel-inner">
-
-           <div class="item #00166c active">
-              <div id="#00166c">
-                  <a target="_blank" href="#">
-                      <img src="slide/2568/88.jpg" class="img-responsive" alt="เลือกตั้ง" /></a>
-                  <div class="carousel-caption">
-                  </div>
-               
-                 
-              </div>
-          </div>
-
-
-           <div class="item #E7E7E7">
-              <div id="#E7E7E7">
-                  <a target="_blank" href="#">
-                      <img src="slide/2568/ita.png" class="img-responsive" alt="up ITA 68" /></a>
-                  <div class="carousel-caption">
-                  </div>
-               
-         
-              </div>
-          </div>
-
-          
-
-        
-       
-    
-          
-       
-   
-
-           <div class="item #6F377E">
-              <div id="#6F377E">
-                  <a target="_blank" href="#">
-                      <img src="slide/2565/AD-NoGift-66.jpg" class="img-responsive" alt="NoGift มหาวิทยาลัยพะเยา" /></a>
-                  <div class="carousel-caption">
-                  </div>
-
-
-              </div>
-          </div>
-          <div class="item #026e01">
-              <div id="#026e01">
-                  <a target="_blank" href="https://vrtour.up.ac.th/">
-                      <img src="slide/2566/vrtour.png" class="img-responsive" alt="360 UP VR-Tour" /></a>
-                  <div class="carousel-caption">
-                  </div>
-               
-
-              </div>
-          </div>
-
-     
-
-
-
-
-      
-
-
-
-      </div>
-             
-      </div>
- 
-    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-
-
-          
-          
+            <!-- Placeholder รูปโปรไฟล์ (แทนที่ 'src' หรือใช้ CSS background) -->
+            <div class="profile-image-placeholder" role="img" aria-label="Profile Photo Placeholder">
+                (รูปโปรไฟล์)
+            </div>
+
+            <h1 id="main-heading">จิรกิตต์ หมูหล้า (แจ็ค)</h1>
+            <p class="subtitle">
+                นิสิตชั้นปีที่ 2, สาขาวิทยาการคอมพิวเตอร์ <br>
+                คณะเทคโนโลยีสารสนเทศและการสื่อสาร, มหาวิทยาลัยพะเยา
+            </p>
+            <a href="mailto:67020780@up.ac.th" class="button">ส่งอีเมล (67020780@up.ac.th)</a>
         </section>
 
-    <style>
-        .colored-box {
-           
-            color: #fff;
-        }
+        <!-- Section 2: About Me -->
+        <section id="about" aria-labelledby="about-heading">
+            <h2 id="about-heading">เกี่ยวกับผม</h2>
+            <p>
+                สวัสดีครับ ผมชื่อ “แจ็ค” จิรกิตต์ หมูหล้า
+                ปัจจุบันเป็นนิสิตชั้นปีที่ 2 สาขาวิทยาการคอมพิวเตอร์ มหาวิทยาลัยพะเยา
+            </p>
+            <p>
+                ผมสนใจด้านการพัฒนาเว็บไซต์และเทคโนโลยีที่ช่วยแก้ปัญหาในชีวิตจริง ชอบเรียนรู้สิ่งใหม่ ๆ โดยเฉพาะเรื่องที่ท้าทาย และชอบทำงานร่วมกับทีมเพื่อสร้างสิ่งที่มีประโยชน์จริงให้ผู้คน
+            </p>
+            <p>
+                ผมเชื่อว่าการเขียนโค้ดไม่ใช่แค่การสร้างโปรแกรม แต่คือการสร้างโอกาสและประสบการณ์ใหม่ ๆ ให้กับโลกดิจิทัล
+            </p>
 
-        .bg-custom1 {
-            color: #e1e1e1;
-            background-color: #560e7ba3;
-        }
-
-        .bg-custom2 {
-            color: #e1e1e1;
-            background-color: #ffd800a3;
-        }
-    </style>
- <section  style="padding-top: 0.8rem;background-color:#d4d9df">
-    <div class="container no-padding animated" id="id-to-scroll" >
-       
-       
-           
-
-
-       <div class="swiper mySwiper" style="padding: 20px 0;">
-  <div class="swiper-wrapper">
-
-    <!-- รายการที่ 1 -->
-    <div class="swiper-slide">
-      <a href="https://soundcloud.com/uppodcasts">
-        <img src="img/og/UPPODCAST.png" alt="UPPODCAST" class="img-responsive center-block" />
-      </a>
-    </div>
-
-    <!-- รายการที่ 2 -->
-    <div class="swiper-slide">
-      <a href="#">
-        <img src="covid/1x/sdg02.png" alt="uprank" class="img-responsive center-block" />
-      </a>
-    </div>
-
-    <!-- รายการที่ 3 -->
-    <div class="swiper-slide">
-      <a href="http://wwmms.up.ac.th/research/uprm/graphprotfolio">
-        <img src="covid/icon/banner01.jpg" alt="faq" class="img-responsive center-block" />
-      </a>
-    </div>
-
-    <!-- รายการที่ 4 -->
-    <div class="swiper-slide">
-      <a href="http://wwmms.up.ac.th/research/login">
-        <img src="covid/icon/banner02.jpg" alt="faq" class="img-responsive center-block" />
-      </a>
-    </div>
-
-  </div>
-
-  <!-- ปุ่มเลื่อน -->
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-</div>
-     
-   
-                
-            </div>
-
+            <blockquote>
+                “เขียน เรียนรู้ และเติบโตไปด้วยกัน”
+            </blockquote>
         </section>
 
-     <section class="container" style="padding-top: 1.8rem;">
-
-          <div class="container no-padding animated" >
-              <div class="row" style="padding-bottom: 30px;">
-            <div class="col-lg-6 form-group">
-                <div style="margin-top:20px;">
-
-                <h3 style="text-align: center; margin-bottom: 3.0rem;margin-top:20px;font-family: 'Athiti', sans-serif;" class="text-center"><i class="fa fa-bullhorn"></i> ระเบียบ/ข้อบังคับ/ประกาศ/คำสั่ง | <a href="Announce.aspx"><span style="font-size: 16px; color: #333">ประกาศทั้งหมด</span></a></h3>
-                <span id="ContentPlaceHolder1_lblError" style="color:Red;"></span>
-             
-
-                                      <span>
-                                          <a style="color:#363d40;" class="linenews" href="http://www.lp.up.ac.th/th/main/readcontent/doc/827">  
-                                               <i class="fa fa-angle-double-right"></i> คำสั่งมหาวิทยาลัยพะเยา ที่ 2512/2568 ลงวันที่ 15 กันยายน พ.ศ. 2568  เรื่อง มอบอำนาจให้ผู้อำนวยการสถาบันนวัตกรรมการเรียนรู้ ปฏิบัติการแทนอธิการบดีมหาวิทยาลัยพะเยา
-
-                                        <span class="badge badge-secondary"> 2025-09-18 13:47:14</span> <span class="badge badge-info"> คำสั่งมหาวิทยาลัยพะเยา </span> <span class="badge badge-success"> กองกฎหมาย </span></a>  </span>   
-                                    <div style="padding-bottom:7px; padding-top:7px; border-bottom-style: dotted; border-bottom-width: thin; border-bottom-color: #7b3b95;"></div>
-                                    
-                                   
-                                
-
-                                      <span>
-                                          <a style="color:#363d40;" class="linenews" href="http://www.lp.up.ac.th/th/main/readcontent/doc/826">  
-                                               <i class="fa fa-angle-double-right"></i> คำสั่งมหาวิทยาลัยพะเยา ที่ 2511/2568 ลงวันที่ 15 กันยายน พ.ศ. 2568  เรื่อง มอบอำนาจให้ผู้ช่วยอธิการบดี ปฏิบัติการแทนอธิการบดีมหาวิทยาลัยพะเยา ฉบับที่ 2
-
-                                        <span class="badge badge-secondary"> 2025-09-18 13:44:16</span> <span class="badge badge-info"> คำสั่งมหาวิทยาลัยพะเยา </span> <span class="badge badge-success"> กองกฎหมาย </span></a>  </span>   
-                                    <div style="padding-bottom:7px; padding-top:7px; border-bottom-style: dotted; border-bottom-width: thin; border-bottom-color: #7b3b95;"></div>
-                                    
-                                   
-                                
-
-                                      <span>
-                                          <a style="color:#363d40;" class="linenews" href="http://www.lp.up.ac.th/th/main/readcontent/doc/825">  
-                                               <i class="fa fa-angle-double-right"></i> คำสั่งมหาวิทยาลัยพะเยา ที่ 2510/2568 ลงวันที่ 15 กันยายน พ.ศ. 2568  เรื่อง มอบอำนาจให้รองอธิการบดี ปฏิบัติการแทนอธิการบดีมหาวิทยาลัยพะเยา ฉบับที่ 2
-
-                                        <span class="badge badge-secondary"> 2025-09-18 13:43:19</span> <span class="badge badge-info"> คำสั่งมหาวิทยาลัยพะเยา </span> <span class="badge badge-success"> กองกฎหมาย </span></a>  </span>   
-                                    <div style="padding-bottom:7px; padding-top:7px; border-bottom-style: dotted; border-bottom-width: thin; border-bottom-color: #7b3b95;"></div>
-                                    
-                                   
-                                
-
-                                      <span>
-                                          <a style="color:#363d40;" class="linenews" href="http://www.lp.up.ac.th/th/main/readcontent/doc/824">  
-                                               <i class="fa fa-angle-double-right"></i> คำสั่งมหาวิทยาลัยพะเยา ที่ 2509/2568 ลงวันที่ 15 กันยายน พ.ศ. 2568 เรื่อง มอบอำนาจหน้าที่ให้รองอธิการบดี และผู้ช่วยอธิการบดี กำกับการบริหาร สั่งการ และปฏิบัติการแทนอธิการบดีมหาวิทยาลัยพะเยา และช่วยกำกับดูแลการปฏิบัติงานแทนอธิการบดีมหาวิทยาลัยพะเยา ฉบับที่ 2
-
-                                        <span class="badge badge-secondary"> 2025-09-18 13:42:04</span> <span class="badge badge-info"> คำสั่งมหาวิทยาลัยพะเยา </span> <span class="badge badge-success"> กองกฎหมาย </span></a>  </span>   
-                                    <div style="padding-bottom:7px; padding-top:7px; border-bottom-style: dotted; border-bottom-width: thin; border-bottom-color: #7b3b95;"></div>
-                                    
-                                   
-                                
-
-        
-                    </div>
-
+        <!-- Section 3: Contact -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">ช่องทางการติดต่อ</h2>
+            <div class="contact-links">
+                <!-- 
+                  อัปเดตลิงก์ตามที่ผู้ใช้ร้องขอ 
+                -->
+                <a href="https://www.youtube.com/@Shinrakit" class="button" target="_blank" rel="noopener noreferrer">Youtube</a>
+                <a href="mailto:67020780@up.ac.th" class="button">Email</a>
+                <a href="https://github.com/shinrakit" class="button" target="_blank" rel="noopener noreferrer">Github</a>
             </div>
-            <link href="css/Styletime.css" rel="stylesheet" />
-            <div class="col-lg-6 form-group ">
-               
-             
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 จิรกิตต์ หมูหล้า</p>
+    </footer>
+
+    <!-- 
+      JavaScript ทั้งหมดอยู่ในไฟล์เดียว (Internal Script)
+      สำหรับจัดการ Dark Mode
+    -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggle = document.getElementById('dark-mode-toggle');
+            const userThemeKey = 'theme-preference';
+            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+            /**
+             * ใช้ธีมที่เลือก (dark/light)
+             * @param {string} theme - 'dark' หรือ 'light'
+             */
+            function applyTheme(theme) {
+                const isDark = (theme === 'dark');
+                document.documentElement.classList.toggle('dark-mode', isDark);
+                themeToggle.checked = isDark;
                 
-            
-
- 
-            
-                <div style="padding-top:20px;">
-<h3 style="text-align: center; margin-bottom: 15px; font-family: 'Athiti', sans-serif;" class="text-center"><i class='fa fa-calendar'></i> ปฏิทินกิจกรรม <span class='badge badge-warning' style='margin-left:10px; font-size:14px;'>5</span> | <a href='UP_Event_All.aspx'><span style="font-size: 16px; color: #333; font-family: 'Athiti', sans-serif;">ปฏิทินกิจกรรมทั้งหมด</span></a></h3><div class='event-block'><div class='event-date'><a href='NewsRead-ev.aspx?itemID=36072'  class='float-right linenews'><i class='fa fa-calendar'></i> 14 พฤศจิกายน 2568 [เวลา: 7:30–10:00]</a></div><a href='NewsRead-ev.aspx?itemID=36072'  class='float-right linenews'><div class='event-title'>พิธีตักบาตรถวายเป็นพระราชกุศล แด่สมเด็จพระพันปีหลวง น้อมรำลึกในพระมหากรุณาธิคุณ</div></a></div><div class='event-block'><div class='event-date'><a href='NewsRead-ev.aspx?itemID=36071'  class='float-right linenews'><i class='fa fa-calendar'></i> 21 พฤศจิกายน 2568 [เวลา: 7:30–10:00]</a></div><a href='NewsRead-ev.aspx?itemID=36071'  class='float-right linenews'><div class='event-title'>พิธีตักบาตรถวายเป็นพระราชกุศล แด่สมเด็จพระพันปีหลวง น้อมรำลึกในพระมหากรุณาธิคุณ</div></a></div><div class='event-block'><div class='event-date'><a href='NewsRead-ev.aspx?itemID=36016'  class='float-right linenews'><i class='fa fa-calendar'></i> 28 พฤศจิกายน 2568 [เวลา: 15:30–18:00]</a></div><a href='NewsRead-ev.aspx?itemID=36016'  class='float-right linenews'><div class='event-title'>กิจกรรมวีถีวัฒนธรรมแห่งท้องทุ่ง
-“เกี่ยวข้าว ตีข้าว วิถีชาวล้านนา”  (วันเกี่ยวข้าว)</div></a></div>
-
-
-</div>
-               
-            </div>
-        </div>
-              </div>
-         </section>
-    
-
-    
-    <section class="fullwidth-row bg-15 fixed" style="background-color:#e4d7f2">
-        <div id="maxcits" class=" content-padding-lg">
-            <div class="row animated">
-
-                <div class="col-sm-12 col-md-12 col-lg-12 form-group" style="margin-top: 60px;">
-                   
-                 <h2 style="padding-bottom: 20px; text-align: center; margin-bottom: 10px; color: white;font-family: 'Athiti', sans-serif;" class="text-center"><i class="fa fa-star-o"></i>เรื่องเด่น   | <a href="NewsTopAll.aspx"><span style="font-size: 16px; color: white;font-family: 'Athiti', sans-serif;">เรื่องเด่นทั้งหมด</span></a></h2>
-
-                    <div style="padding-top: 10px; padding-left: 40px; padding-bottom: 10px; padding-right: 40px;">
-
-
-                        <div class="row">
-                            
-  <div class='col-xs-12 col-sm-3'><div class='news-card'><div class='news-tag'><a style='color: #000000;'  href='UP_News.aspx?StrategicID=1' style='text-decoration: underline;color:#00000'>#ด้านการเตรียมคน</div> <div class='news-img-wrap'>  <img src='images_news/Thumb3/NewsCove(29)_638985445623644509.jpg' alt='ม.พะเยา เปิดรับสมัคร TCAS 69 รอบโควตานักเรียนเรียนดี ประจำปีการศึกษา 2569'> </div><div class='news-card-body'>  <div class='news-meta' style='padding-top:10px;'>  <i class='fa fa-calendar'></i> อัพข่าวเมื่อ 4 ชั่วโมงที่แล้ว  </div>  <p><a href='NewsRead.aspx?itemID=36175' style='font-family: "Athiti", sans-serif;'>ม.พะเยา เปิดรับสมัคร TCAS 69 รอบโควตานักเรียนเรียนดี ประจำปีการศึกษา 2569</a></p> <span class='news-new-icon'><i class='fa fa-bolt'></i> NEW</span></p>   <div class='readmore-wrap'> <a href='NewsRead.aspx?itemID=36175' ' class='btn btn-readmore'>อ่านเพิ่มเติม <i class='fa fa-chevron-right'></i></a></div><a href='Newssdg.aspx?sdg=4'><span class='sdg4s'>4</span></a>&nbsp; </div>  </div> </div>  <div class='col-xs-12 col-sm-3'><div class='news-card'><div class='news-tag'><a style='color: #000000;'  href='UP_News.aspx?StrategicID=2' style='text-decoration: underline;color:#00000'>#ด้านการสร้างงานวิจัยและนวัตกรรม</div> <div class='news-img-wrap'>  <img src='images_news/Thumb3/UPITI-PIC-02_638978680699255739.jpg' alt='สตาร์ทอัพ ม.พะเยา สุดเจ๋ง! คว้ารางวัลผู้ประกอบการโดดเด่น สาขา Potential Technology Transfer ในงาน Thai-BISPA Day 2025'> </div><div class='news-card-body'>  <div class='news-meta' style='padding-top:10px;'>  <i class='fa fa-calendar'></i> อัพข่าวเมื่อ 4 พ.ย. 2568  </div>  <p><a href='NewsRead.aspx?itemID=36091' style='font-family: "Athiti", sans-serif;'>สตาร์ทอัพ ม.พะเยา สุดเจ๋ง! คว้ารางวัลผู้ประกอบการโดดเด่น สาขา Potential Technology Transfer ในงาน Thai-BISPA Day 2025</a></p></p>   <div class='readmore-wrap'> <a href='NewsRead.aspx?itemID=36091' ' class='btn btn-readmore'>อ่านเพิ่มเติม <i class='fa fa-chevron-right'></i></a></div><a href='Newssdg.aspx?sdg=4'><span class='sdg4s'>4</span></a>&nbsp;<a href='Newssdg.aspx?sdg=8'><span class='sdg8s'>8</span></a>&nbsp;<a href='Newssdg.aspx?sdg=9'><span class='sdg9s'>9</span></a>&nbsp;<a href='Newssdg.aspx?sdg=17'><span class='sdg17s'>17</span></a>&nbsp; </div>  </div> </div>  <div class='col-xs-12 col-sm-3'><div class='news-card'><div class='news-tag'><a style='color: #000000;'  href='UP_News.aspx?StrategicID=3' style='text-decoration: underline;color:#00000'>#ด้านการบริการวิชาการ</div> <div class='news-img-wrap'>  <img src='images_news/Thumb3/ปกข่าว_638978446352134405.jpg' alt='สถาบันนวัตกรรมการเรียนรู้ มหาวิทยาลัยพะเยา เปิดหลักสูตร “AI for Innovative Teachers” มุ่งปั้นครูสู่นวัตกรการศึกษา ขับเคลื่อนปัญญาและนวัตกรรมสู่ชุมชน
-วันเสาร์ที่ 1 พฤศจิกายน 2568 ฯ'> </div><div class='news-card-body'>  <div class='news-meta' style='padding-top:10px;'>  <i class='fa fa-calendar'></i> อัพข่าวเมื่อ 4 พ.ย. 2568  </div>  <p><a href='NewsRead.aspx?itemID=36083' style='font-family: "Athiti", sans-serif;'>สถาบันนวัตกรรมการเรียนรู้ มหาวิทยาลัยพะเยา เปิดหลักสูตร “AI for Innovative Teachers” มุ่งปั้นครูสู่นวัตกรการศึกษา ขับเคลื่อนปัญญาและนวัตกรรมสู่ชุมชน
-วันเสาร์ที่ 1 พฤศจิกายน 2568 ฯ</a></p></p>   <div class='readmore-wrap'> <a href='NewsRead.aspx?itemID=36083' ' class='btn btn-readmore'>อ่านเพิ่มเติม <i class='fa fa-chevron-right'></i></a></div><a href='Newssdg.aspx?sdg=4'><span class='sdg4s'>4</span></a>&nbsp;<a href='Newssdg.aspx?sdg=17'><span class='sdg17s'>17</span></a>&nbsp; </div>  </div> </div>  <div class='col-xs-12 col-sm-3'><div class='news-card'><div class='news-tag'><a style='color: #000000;'  href='UP_News.aspx?StrategicID=2' style='text-decoration: underline;color:#00000'>#ด้านการสร้างงานวิจัยและนวัตกรรม</div> <div class='news-img-wrap'>  <img src='images_news/Thumb3/NewsCove(19)_638977687761059834.jpg' alt='ม.พะเยา ร่วมขับเคลื่อน “เมืองแห่งการเรียนรู้ประเทศไทย” จุดประกายการเรียนรู้ตลอดชีวิตสู่สังคมแห่งความเสมอภาค'> </div><div class='news-card-body'>  <div class='news-meta' style='padding-top:10px;'>  <i class='fa fa-calendar'></i> อัพข่าวเมื่อ 3 พ.ย. 2568  </div>  <p><a href='NewsRead.aspx?itemID=36074' style='font-family: "Athiti", sans-serif;'>ม.พะเยา ร่วมขับเคลื่อน “เมืองแห่งการเรียนรู้ประเทศไทย” จุดประกายการเรียนรู้ตลอดชีวิตสู่สังคมแห่งความเสมอภาค</a></p></p>   <div class='readmore-wrap'> <a href='NewsRead.aspx?itemID=36074' ' class='btn btn-readmore'>อ่านเพิ่มเติม <i class='fa fa-chevron-right'></i></a></div><a href='Newssdg.aspx?sdg=4'><span class='sdg4s'>4</span></a>&nbsp;<a href='Newssdg.aspx?sdg=5'><span class='sdg5s'>5</span></a>&nbsp;<a href='Newssdg.aspx?sdg=10'><span class='sdg10s'>10</span></a>&nbsp;<a href='Newssdg.aspx?sdg=11'><span class='sdg11s'>11</span></a>&nbsp;<a href='Newssdg.aspx?sdg=17'><span class='sdg17s'>17</span></a>&nbsp; </div>  </div> </div>
-
-
-<style>.news-new-icon {
-  background-color: #e91e63;
-  color: #fff;
-  font-size: 11px;
-  font-weight: bold;
-  padding: 2px 6px;
-  border-radius: 10px;
-  margin-left: 6px;
-  display: inline-block;
-  animation: blinkNew 1.2s infinite;
-}
-
-@keyframes blinkNew {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
-}</style>
-                        </div>
-
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="content-padding-lg" style="background-color:#D3D3D3">
-    <div class="container">
-     
-           <div class="row animated" style="margin-bottom: 0rem;">
-            
-                    <div class="col-lg-12 col-md-12 form-group animated">
-
-                        <h2 class="text-left" style="font-weight:700;font-family: 'Athiti', sans-serif;">ข่าวสารความเคลื่อนไหว | <a href="UP_News.aspx"><span style="font-size: 16px;color:#333;font-family: 'Athiti', sans-serif;">ข่าวทั้งหมด</span></a></h2>
-                        <div style="padding-top:20px;">
-                
-                     
-                            
-<div class='row'><div class='col-md-12'><div class='col-sm-6 col-md-3 col-lg-3 form-group'><div class='person'><div style='padding:10px;border-radius: 10px 10px 0px 0px;background-color: #4F5961;'><span style='color: #ffffff;font-size: 11px;margin-bottom:10px;margin-right:5px;'><a style='color: #ffffff;' href='UP_News.aspx?StrategicID=1'>#ด้านการเตรียมคน</a>&nbsp;&nbsp;<i style='color: #ffffff;' class='fa fa-clock-o'></i>&nbsp;อัพเมื่อ 5 ชั่วโมงที่แล้ว</span></div><a href='NewsRead.aspx?itemID=36173'> <span class='btn-sm btn-danger' style='z-index:9999;position:absolute;margin:10px;'><i class='fa fa-bolt flash-icon'></i> NEW</span><img style='width: 100%;' class='img-responsive' src='images_news/Thumb3/11.11.2568.00_638985398514280846.png' alt='สาขาวิชาภาษาฝรั่งเศส ต้อนรับผู้บริหารสมาคมฝรั่งเศสเชียงใหม่ ร่วมรำลึก 340 ปี ความสัมพันธ์ไทย–ฝรั่งเศส'/></a><h5 style='padding:20px;background-color:#4F5961;box-shadow:0 0 10px rgba(0,0,0,.15),0 3px 3px rgba(0,0,0,.15);border-radius:0px 0px 10px 10px'><a style='color:#ffffff;font-family:"Athiti",sans-serif;' class='linenews' href='NewsRead.aspx?itemID=36173'>สาขาวิชาภาษาฝรั่งเศส ต้อนรับผู้บริหารสมาคมฝรั่งเศสเชียงใหม่ ร่วมรำลึก 340 ปี ความสัมพันธ์ไทย–ฝรั่งเศส</a><div style='height:5px;'></div><a href='Newssdg.aspx?sdg=4'><span class='sdg4s'>4</span></a>&nbsp;<a href='Newssdg.aspx?sdg=17'><span class='sdg17s'>17</span></a>&nbsp;</h5></div></div><div class='col-sm-6 col-md-3 col-lg-3 form-group'><div class='person'><div style='padding:10px;border-radius: 10px 10px 0px 0px;background-color: #4F5961;'><span style='color: #ffffff;font-size: 11px;margin-bottom:10px;margin-right:5px;'><a style='color: #ffffff;' href='UP_News.aspx?StrategicID=4'>#ด้านการทำนุบำรุงศิลปวัฒนธรรม</a>&nbsp;&nbsp;<i style='color: #ffffff;' class='fa fa-clock-o'></i>&nbsp;อัพเมื่อ 5 ชั่วโมงที่แล้ว</span></div><a href='NewsRead.aspx?itemID=36172'> <span class='btn-sm btn-danger' style='z-index:9999;position:absolute;margin:10px;'><i class='fa fa-bolt flash-icon'></i> NEW</span><img style='width: 100%;' class='img-responsive' src='images_news/Thumb3/Banner ข่าวเว็บไซต์ - 2160-1080px (y)_638985394625142474.jpg' alt='กองอาคารสถานที่ ร่วมตักบาตรตักบาตรถวายเป็นพระราชกุศลแด่ สมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ พระบรมราชชนนีพันปีหลวง'/></a><h5 style='padding:20px;background-color:#4F5961;box-shadow:0 0 10px rgba(0,0,0,.15),0 3px 3px rgba(0,0,0,.15);border-radius:0px 0px 10px 10px'><a style='color:#ffffff;font-family:"Athiti",sans-serif;' class='linenews' href='NewsRead.aspx?itemID=36172'>กองอาคารสถานที่ ร่วมตักบาตรตักบาตรถวายเป็นพระราชกุศลแด่ สมเด็จพระนางเจ้าสิริกิติ์ พระบรมราชินีนาถ พระบรมราชชนนีพันปีหลวง</a><div style='height:5px;'></div><a href='Newssdg.aspx?sdg=11'><span class='sdg11s'>11</span></a>&nbsp;</h5></div></div><div class='col-sm-6 col-md-3 col-lg-3 form-group'><div class='person'><div style='padding:10px;border-radius: 10px 10px 0px 0px;background-color: #4F5961;'><span style='color: #ffffff;font-size: 11px;margin-bottom:10px;margin-right:5px;'><a style='color: #ffffff;' href='UP_News.aspx?StrategicID=5'>#ด้านการพัฒนาระบบบริหารจัดการ</a>&nbsp;&nbsp;<i style='color: #ffffff;' class='fa fa-clock-o'></i>&nbsp;อัพเมื่อ 23 ชั่วโมงที่แล้ว</span></div><a href='NewsRead.aspx?itemID=36171'><img style='width: 100%;' class='img-responsive' src='images_news/Thumb3/final - Banner ข่าวเว็บไซต์ - 2160-1080px (y)_638984758023539664.jpg' alt='กองอาคารสถานที่ มหาวิทยาลัยพะเยา ลงพื้นที่ตรวจสอบ ติดตามความก้าวหน้างานก่อสร้าง งานปรับปรุงภายในมหาวิทยาลัยพะเยา'/></a><h5 style='padding:20px;background-color:#4F5961;box-shadow:0 0 10px rgba(0,0,0,.15),0 3px 3px rgba(0,0,0,.15);border-radius:0px 0px 10px 10px'><a style='color:#ffffff;font-family:"Athiti",sans-serif;' class='linenews' href='NewsRead.aspx?itemID=36171'>กองอาคารสถานที่ มหาวิทยาลัยพะเยา ลงพื้นที่ตรวจสอบ ติดตามความก้าวหน้างานก่อสร้าง งานปรับปรุงภายในมหาวิทยาลัยพะเยา</a><div style='height:5px;'></div><a href='Newssdg.aspx?sdg=11'><span class='sdg11s'>11</span></a>&nbsp;</h5></div></div><div class='col-sm-6 col-md-3 col-lg-3 form-group'><div class='person'><div style='padding:10px;border-radius: 10px 10px 0px 0px;background-color: #4F5961;'><span style='color: #ffffff;font-size: 11px;margin-bottom:10px;margin-right:5px;'><a style='color: #ffffff;' href='UP_News.aspx?StrategicID=1'>#ด้านการเตรียมคน</a>&nbsp;&nbsp;<i style='color: #ffffff;' class='fa fa-clock-o'></i>&nbsp;อัพเมื่อ 1 วันที่แล้ว</span></div><a href='NewsRead.aspx?itemID=36169'><img style='width: 100%;' class='img-responsive' src='images_news/Thumb3/Banner ข่าวเว็บไซต์ - 2160-1080px (y)_638984714922989122.jpg' alt='กองอาคารสถานที่ มหาวิทยาลัยพะเยา จัดกิจกรรมอบรมการใช้งานระบบบริหารเอกสาร “UP DMS” ภายใต้โครงการพัฒนาทักษะการทำงานของบุคลากร'/></a><h5 style='padding:20px;background-color:#4F5961;box-shadow:0 0 10px rgba(0,0,0,.15),0 3px 3px rgba(0,0,0,.15);border-radius:0px 0px 10px 10px'><a style='color:#ffffff;font-family:"Athiti",sans-serif;' class='linenews' href='NewsRead.aspx?itemID=36169'>กองอาคารสถานที่ มหาวิทยาลัยพะเยา จัดกิจกรรมอบรมการใช้งานระบบบริหารเอกสาร “UP DMS” ภายใต้โครงการพัฒนาทักษะการทำงานของบุคลากร</a><div style='height:5px;'></div><a href='Newssdg.aspx?sdg=8'><span class='sdg8s'>8</span></a>&nbsp;<a href='Newssdg.aspx?sdg=9'><span class='sdg9s'>9</span></a>&nbsp;<a href='Newssdg.aspx?sdg=17'><span class='sdg17s'>17</span></a>&nbsp;</h5></div></div></h5></div></div><div><br></div><div class='row'><div class='col-md-12'><div class='col-sm-6 col-md-3 col-lg-3 form-group'><div class='person'><div style='padding:10px;border-radius: 10px 10px 0px 0px;background-color: #4F5961;'><span style='color: #ffffff;font-size: 11px;margin-bottom:10px;margin-right:5px;'><a style='color: #ffffff;' href='UP_News.aspx?StrategicID=2'>#ด้านการสร้างงานวิจัยและนวัตกรรม</a>&nbsp;&nbsp;<i style='color: #ffffff;' class='fa fa-clock-o'></i>&nbsp;อัพเมื่อ 1 วันที่แล้ว</span></div><a href='NewsRead.aspx?itemID=36167'><img style='width: 100%;' class='img-responsive' src='images_news/Thumb3/templete ข่าวกิจกรรม_638984703258121283.jpg' alt='โครงการประชุมเชิงวิชาการเพื่อการวิจัยขั้นสูงด้านเภสัชกรรมและวิทยาศาสตร์เครื่องสำอาง'/></a><h5 style='padding:20px;background-color:#4F5961;box-shadow:0 0 10px rgba(0,0,0,.15),0 3px 3px rgba(0,0,0,.15);border-radius:0px 0px 10px 10px'><a style='color:#ffffff;font-family:"Athiti",sans-serif;' class='linenews' href='NewsRead.aspx?itemID=36167'>โครงการประชุมเชิงวิชาการเพื่อการวิจัยขั้นสูงด้านเภสัชกรรมและวิทยาศาสตร์เครื่องสำอาง</a><div style='height:5px;'></div></h5></div></div><div class='col-sm-6 col-md-3 col-lg-3 form-group'><div class='person'><div style='padding:10px;border-radius: 10px 10px 0px 0px;background-color: #4F5961;'><span style='color: #ffffff;font-size: 11px;margin-bottom:10px;margin-right:5px;'><a style='color: #ffffff;' href='UP_News.aspx?StrategicID=2'>#ด้านการสร้างงานวิจัยและนวัตกรรม</a>&nbsp;&nbsp;<i style='color: #ffffff;' class='fa fa-clock-o'></i>&nbsp;อัพเมื่อ 1 วันที่แล้ว</span></div><a href='NewsRead.aspx?itemID=36165'><img style='width: 100%;' class='img-responsive' src='images_news/Thumb3/00 ปก ผำ68_638984558480299121.jpg' alt='คณะวิศวกรรมศาสตร์ ม.พะเยา ขับเคลื่อนนวัตกรรมการเพาะเลี้ยงผำ
-ยกระดับรายได้ชุมชนบ้านโป่งเกลือ จ.พะเยา'/></a><h5 style='padding:20px;background-color:#4F5961;box-shadow:0 0 10px rgba(0,0,0,.15),0 3px 3px rgba(0,0,0,.15);border-radius:0px 0px 10px 10px'><a style='color:#ffffff;font-family:"Athiti",sans-serif;' class='linenews' href='NewsRead.aspx?itemID=36165'>คณะวิศวกรรมศาสตร์ ม.พะเยา ขับเคลื่อนนวัตกรรมการเพาะเลี้ยงผำ
-ยกระดับรายได้ชุมชนบ้านโป่งเกลือ จ.พะเยา</a><div style='height:5px;'></div><a href='Newssdg.aspx?sdg=8'><span class='sdg8s'>8</span></a>&nbsp;</h5></div></div><div class='col-sm-6 col-md-3 col-lg-3 form-group'><div class='person'><div style='padding:10px;border-radius: 10px 10px 0px 0px;background-color: #4F5961;'><span style='color: #ffffff;font-size: 11px;margin-bottom:10px;margin-right:5px;'><a style='color: #ffffff;' href='UP_News.aspx?StrategicID=1'>#ด้านการเตรียมคน</a>&nbsp;&nbsp;<i style='color: #ffffff;' class='fa fa-clock-o'></i>&nbsp;อัพเมื่อ 1 วันที่แล้ว</span></div><a href='NewsRead.aspx?itemID=36163'><img style='width: 100%;' class='img-responsive' src='images_news/Thumb3/banner ข่าว (1)_638984516154178381.jpg' alt='SEEN-UP congratulate and warmly welcome our student, from a study visit and leadership development project in China.'/></a><h5 style='padding:20px;background-color:#4F5961;box-shadow:0 0 10px rgba(0,0,0,.15),0 3px 3px rgba(0,0,0,.15);border-radius:0px 0px 10px 10px'><a style='color:#ffffff;font-family:"Athiti",sans-serif;' class='linenews' href='NewsRead.aspx?itemID=36163'>SEEN-UP congratulate and warmly welcome our student, from a study visit and leadership development project in China.</a><div style='height:5px;'></div><a href='Newssdg.aspx?sdg=4'><span class='sdg4s'>4</span></a>&nbsp;<a href='Newssdg.aspx?sdg=17'><span class='sdg17s'>17</span></a>&nbsp;</h5></div></div><div class='col-sm-6 col-md-3 col-lg-3 form-group'><div class='person'><div style='padding:10px;border-radius: 10px 10px 0px 0px;background-color: #4F5961;'><span style='color: #ffffff;font-size: 11px;margin-bottom:10px;margin-right:5px;'><a style='color: #ffffff;' href='UP_News.aspx?StrategicID=3'>#ด้านการบริการวิชาการ</a>&nbsp;&nbsp;<i style='color: #ffffff;' class='fa fa-clock-o'></i>&nbsp;อัพเมื่อ 1 วันที่แล้ว</span></div><a href='NewsRead.aspx?itemID=36162'><img style='width: 100%;' class='img-responsive' src='images_news/Thumb3/NewsCove(28)_638983892477506057.jpg' alt='ม.พะเยา ร่วมกับกองทุนเพื่อความเสมอภาคทางการศึกษา และหน่วยบริหารและจัดการทุนด้านการพัฒนาระดับพื้นที่ จุดประกาย “เมืองแห่งการเรียนรู้” สปป.ลาว หนุนแนวคิดการเรียนรู้ตลอดชีวิต'/></a><h5 style='padding:20px;background-color:#4F5961;box-shadow:0 0 10px rgba(0,0,0,.15),0 3px 3px rgba(0,0,0,.15);border-radius:0px 0px 10px 10px'><a style='color:#ffffff;font-family:"Athiti",sans-serif;' class='linenews' href='NewsRead.aspx?itemID=36162'>ม.พะเยา ร่วมกับกองทุนเพื่อความเสมอภาคทางการศึกษา และหน่วยบริหารและจัดการทุนด้านการพัฒนาระดับพื้นที่ จุดประกาย “เมืองแห่งการเรียนรู้” สปป.ลาว หนุนแนวคิดการเรียนรู้ตลอดชีวิต</a><div style='height:5px;'></div><a href='Newssdg.aspx?sdg=4'><span class='sdg4s'>4</span></a>&nbsp;<a href='Newssdg.aspx?sdg=11'><span class='sdg11s'>11</span></a>&nbsp;<a href='Newssdg.aspx?sdg=17'><span class='sdg17s'>17</span></a>&nbsp;</h5></div></div></h5></div></div><div><br></div>
-
-
-<style>
-.flash-icon {
-  color: gold;
-  animation: flashBlink 1.5s infinite ease-in-out;
-  font-size: 16px;
-  margin-right: 4px;
-}
-@keyframes flashBlink {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.4; transform: scale(1.2); }
-}
-</style>
-                    </div>
-                    </div>
-                </div>
-                <div class="row animated" style="margin-bottom: 0rem;">
-            <div class="col-lg-12 col-md-12 form-group animated" style="margin-top: 0px;">
-
-                <h2 class="text-left" style="font-weight: 700;font-family: 'Athiti', sans-serif;">รางวัลและความภาคภูมิใจ  | <a href="NewsTopAwardAll.aspx"><span style="font-size: 16px; color: #333;font-family: 'Athiti', sans-serif;">ข่าวทั้งหมด</span></a></h2>
-                <div style="padding-top: 20px;">
-                    
-<div class='col-sm-6 col-md-3 col-lg-3 form-group'><div class='person'><div style='padding:10px;border-radius: 10px 10px 0px 0px;background-color: #951272;'><span style='color: #ffffff;font-size: 12px;margin-bottom:10px;margin-right:5px;'><a  href='UP_News.aspx?StrategicID=5' style='color:#ffffff'>#ด้านการพัฒนาระบบบริหารจัดการ</a>&nbsp;&nbsp;&nbsp;&nbsp; <i style='color:#ffffff' class='fa fa fa-clock-o'></i>&nbsp;12 พ.ย. 2568&nbsp;&nbsp;&nbsp;<i style='color:#ffffff' class='fa fa-eye'></i> 18</span></div><a href='NewsRead.aspx?itemID=36176'> <span class='btn-sm btn-danger' style='z-index:9999;position:absolute;margin:10px;'><i class='fa fa-bolt flash-icon'></i> NEW</span><img style='width: 100%;' class='img-responsive' src='images_news/Thumb3/หน้าปกข่าวขึ้นเว็บไซต์ _638985523789236285.jpg' alt='คณะวิทยาศาสตร์การแพทย์ ขอแสดงความยินดีกับบุคลากรที่ได้รับการแต่งตั้งให้ดำรงตำแหน่งทางวิชาการ'/></a><h5 style='padding:20px; background-color:#951272; box-shadow:0 0 10px rgba(0,0,0,.15), 0 3px 3px rgba(0,0,0,.15); border-radius:0 0 10px 10px; font-family:"Athiti", sans-serif;'><a style='color:#ffffff;' class='linenews' href='NewsRead.aspx?itemID=36176'>คณะวิทยาศาสตร์การแพทย์ ขอแสดงความยินดีกับบุคลากรที่ได้รับการแต่งตั้งให้ดำรงตำแหน่งทางวิชาการ</a><div style='height:2px;'></div><a href='Newssdg.aspx?sdg=4'><span class='sdg4'>4</span></a>&nbsp;<a href='Newssdg.aspx?sdg=17'><span class='sdg17'>17</span></a>&nbsp;</h5></div></div><div class='col-sm-6 col-md-3 col-lg-3 form-group'><div class='person'><div style='padding:10px;border-radius: 10px 10px 0px 0px;background-color: #951272;'><span style='color: #ffffff;font-size: 12px;margin-bottom:10px;margin-right:5px;'><a  href='UP_News.aspx?StrategicID=2' style='color:#ffffff'>#ด้านการสร้างงานวิจัยและนวัตกรรม</a>&nbsp;&nbsp;&nbsp;&nbsp; <i style='color:#ffffff' class='fa fa fa-clock-o'></i>&nbsp;29 ต.ค. 2568&nbsp;&nbsp;&nbsp;<i style='color:#ffffff' class='fa fa-eye'></i> 43</span></div><a href='NewsRead.aspx?itemID=36045'><img style='width: 100%;' class='img-responsive' src='images_news/Thumb3/รางวัล UPLLI_638973531703223351.png' alt='คณะสหเวชศาสตร์ มหาวิทยาลัยพะเยา ขอแสดงความยินดีกับบุคลากรที่ได้รับรางวัล โครงการพัฒนานวัตกรรมเพื่อพัฒนาการเรียนการสอน ประจำปีงบประมาณ พ.ศ. 2568'/></a><h5 style='padding:20px; background-color:#951272; box-shadow:0 0 10px rgba(0,0,0,.15), 0 3px 3px rgba(0,0,0,.15); border-radius:0 0 10px 10px; font-family:"Athiti", sans-serif;'><a style='color:#ffffff;' class='linenews' href='NewsRead.aspx?itemID=36045'>คณะสหเวชศาสตร์ มหาวิทยาลัยพะเยา ขอแสดงความยินดีกับบุคลากรที่ได้รับรางวัล โครงการพัฒนานวัตกรรมเพื่อพัฒนาการเรียนการสอน ประจำปีงบประมาณ พ.ศ. 2568</a><div style='height:2px;'></div><a href='Newssdg.aspx?sdg=4'><span class='sdg4'>4</span></a>&nbsp;<a href='Newssdg.aspx?sdg=17'><span class='sdg17'>17</span></a>&nbsp;</h5></div></div><div class='col-sm-6 col-md-3 col-lg-3 form-group'><div class='person'><div style='padding:10px;border-radius: 10px 10px 0px 0px;background-color: #951272;'><span style='color: #ffffff;font-size: 12px;margin-bottom:10px;margin-right:5px;'><a  href='UP_News.aspx?StrategicID=1' style='color:#ffffff'>#ด้านการเตรียมคน</a>&nbsp;&nbsp;&nbsp;&nbsp; <i style='color:#ffffff' class='fa fa fa-clock-o'></i>&nbsp;29 ต.ค. 2568&nbsp;&nbsp;&nbsp;<i style='color:#ffffff' class='fa fa-eye'></i> 59</span></div><a href='NewsRead.aspx?itemID=36044'><img style='width: 100%;' class='img-responsive' src='images_news/Thumb3/รางวัล GE_638973528653320040.png' alt='คณะสหเวชศาสตร์ มหาวิทยาลัยพะเยา ขอแสดงความยินดีกับบุคลากรที่ได้รับรางวัล อาจารย์ที่ปรึกษาผลงานบูรณาการความรู้สู่นวัตกรรมทางวิชาชีพ ประจำปีการศึกษา 2568'/></a><h5 style='padding:20px; background-color:#951272; box-shadow:0 0 10px rgba(0,0,0,.15), 0 3px 3px rgba(0,0,0,.15); border-radius:0 0 10px 10px; font-family:"Athiti", sans-serif;'><a style='color:#ffffff;' class='linenews' href='NewsRead.aspx?itemID=36044'>คณะสหเวชศาสตร์ มหาวิทยาลัยพะเยา ขอแสดงความยินดีกับบุคลากรที่ได้รับรางวัล อาจารย์ที่ปรึกษาผลงานบูรณาการความรู้สู่นวัตกรรมทางวิชาชีพ ประจำปีการศึกษา 2568</a><div style='height:2px;'></div><a href='Newssdg.aspx?sdg=4'><span class='sdg4'>4</span></a>&nbsp;<a href='Newssdg.aspx?sdg=17'><span class='sdg17'>17</span></a>&nbsp;</h5></div></div><div class='col-sm-6 col-md-3 col-lg-3 form-group'><div class='person'><div style='padding:10px;border-radius: 10px 10px 0px 0px;background-color: #951272;'><span style='color: #ffffff;font-size: 12px;margin-bottom:10px;margin-right:5px;'><a  href='UP_News.aspx?StrategicID=1' style='color:#ffffff'>#ด้านการเตรียมคน</a>&nbsp;&nbsp;&nbsp;&nbsp; <i style='color:#ffffff' class='fa fa fa-clock-o'></i>&nbsp;29 ต.ค. 2568&nbsp;&nbsp;&nbsp;<i style='color:#ffffff' class='fa fa-eye'></i> 322</span></div><a href='NewsRead.aspx?itemID=36042'><img style='width: 100%;' class='img-responsive' src='images_news/Thumb3/540334232_1392331306228051_3769586813068306109_n_638973499598910124.jpg' alt='คณะวิศวกรรมศาสตร์ ขอแสดงความยินดีกับตำแหน่ง'ผู้ช่วยศาสตราจารย์'ธนกฤต เทพอุโมงค์'/></a><h5 style='padding:20px; background-color:#951272; box-shadow:0 0 10px rgba(0,0,0,.15), 0 3px 3px rgba(0,0,0,.15); border-radius:0 0 10px 10px; font-family:"Athiti", sans-serif;'><a style='color:#ffffff;' class='linenews' href='NewsRead.aspx?itemID=36042'>คณะวิศวกรรมศาสตร์ ขอแสดงความยินดีกับตำแหน่ง'ผู้ช่วยศาสตราจารย์'ธนกฤต เทพอุโมงค์</a><div style='height:2px;'></div><a href='Newssdg.aspx?sdg=11'><span class='sdg11'>11</span></a>&nbsp;</h5></div></div>
-
-
-<style>
-.flash-icon {
-  color: gold;
-  animation: flashBlink 1.5s infinite ease-in-out;
-  font-size: 16px;
-  margin-right: 4px;
-}
-@keyframes flashBlink {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.4; transform: scale(1.2); }
-}
-</style>
-
-                    
-                </div>
-
-            </div>
-            </div>   </div>
-</section>
-
-    <section class="fullwidth-row bg-14 fixed">
-		  			<div class="container-fluid content-padding-xl content-padding-mobile-xs animated" style="padding-top: 5rem;">
-		  				<div class="row">
-                           <div class="col-lg-8 col-lg-offset-2 form-group animated" style="padding-top:0px;padding-bottom:10px;">
-
-                        <h2 class="text-left" style="color:rgb(15, 15, 15);font-weight:700;font-family: 'Athiti', sans-serif;">ผลงานวิจัย / บทความวิจัย / บทความทั่วไป / อื่นๆ | <a style="color:rgb(15, 15, 15)" href="UP_Research.aspx"><span style="font-size: 16px;color:rgb(15, 15, 15);font-family: 'Athiti', sans-serif;">บทความทั้งหมด</span></a></h2>
-
-                       
-                         <div style="padding-top:30px;">
-                         
-                             
-
-
-                             
-<div class='col-sm-6 col-md-4 col-lg-4 col-xs form-group'><div class='person'><div style='padding:10px;border-radius: 10px 10px 0px 0px;background-color: #f1f2f2;'><span style='color: #00000;font-size: 11px;margin-bottom:10px;margin-right:5px;'><a  href='UP_Research.aspx?TypeArticleID=99' style='text-decoration: underline;color:#00000'>#บทความทั่วไป</a>&nbsp;&nbsp; <i class='fa fa fa-clock-o'></i>&nbsp;11 พ.ย. 2568&nbsp;&nbsp;<i class='fa fa-eye'></i> 205 </span></div><a href='NewsReadBlog2.aspx?itemID=36168 '>  <span class='spinner-grow spinner-grow-sm' role='status' aria-hidden='true'></span><span class='btn-sm btn-danger' style='z-index:9999;position:absolute;margin: 10px;'>New</span><img style='width:100%' class='img-responsive' src='images_news/Thumb3/1_638984705128973360.jpg' alt='คลินิกกฎหมายสัญชาติ ม.พะเยา พื้นที่แห่งความหวังสำหรับนิสิตไร้สัญชาติ'/> </a><h5 style='padding:20px;background-color: #f1f2f2;box-shadow: 0 0 10px rgba(0,0,0,.15), 0 3px 3px rgba(0,0,0,.15);border-radius: 0px 0px 10px 10px;'><a style='padding-bottom:3px;' class='linenews' href='NewsReadBlog2.aspx?itemID=36168' '>คลินิกกฎหมายสัญชาติ ม.พะเยา พื้นที่แห่งความหวังสำหรับนิสิตไร้สัญชาติ</a></h5></div></div><div class='col-sm-6 col-md-4 col-lg-4 col-xs form-group'><div class='person'><div style='padding:10px;border-radius: 10px 10px 0px 0px;background-color: #f1f2f2;'><span style='color: #00000;font-size: 11px;margin-bottom:10px;margin-right:5px;'><a  href='UP_Research.aspx?TypeArticleID=1' style='text-decoration: underline;color:#00000'>#บทความสุขภาพ</a>&nbsp;&nbsp; <i class='fa fa fa-clock-o'></i>&nbsp;10 พ.ย. 2568&nbsp;&nbsp;<i class='fa fa-eye'></i> 121 </span></div><a href='NewsReadBlog2.aspx?itemID=36159 '>  <span class='spinner-grow spinner-grow-sm' role='status' aria-hidden='true'></span><span class='btn-sm btn-danger' style='z-index:9999;position:absolute;margin: 10px;'>New</span><img style='width:100%' class='img-responsive' src='images_news/Thumb3/NewsCove(27)_638984725929474701.jpg' alt='“อาหารแปรรูปขั้นสูง: ความสะดวกของยุคใหม่กับความท้าทายด้านสุขภาพ'/> </a><h5 style='padding:20px;background-color: #f1f2f2;box-shadow: 0 0 10px rgba(0,0,0,.15), 0 3px 3px rgba(0,0,0,.15);border-radius: 0px 0px 10px 10px;'><a style='padding-bottom:3px;' class='linenews' href='NewsReadBlog2.aspx?itemID=36159' '>“อาหารแปรรูปขั้นสูง: ความสะดวกของยุคใหม่กับความท้าทายด้านสุขภาพ</a></h5></div></div><div class='col-sm-6 col-md-4 col-lg-4 col-xs form-group'><div class='person'><div style='padding:10px;border-radius: 10px 10px 0px 0px;background-color: #f1f2f2;'><span style='color: #00000;font-size: 11px;margin-bottom:10px;margin-right:5px;'><a  href='UP_Research.aspx?TypeArticleID=4' style='text-decoration: underline;color:#00000'>#บทความสังคม</a>&nbsp;&nbsp; <i class='fa fa fa-clock-o'></i>&nbsp;6 พ.ย. 2568&nbsp;&nbsp;<i class='fa fa-eye'></i> 59 </span></div><a href='NewsReadBlog2.aspx?itemID=36109 '><img style='width:100%' class='img-responsive' src='images_news/Thumb3/545_638980370353489458.png' alt='กฎหมายพิเศษว่าด้วยการป้องกันความสูญเสียที่เกิดจากการฉ้อโกงทางการเงินที่ใช้วิธีการทางโทรคมนาคมและการคืนเงินสำหรับความสูญเสียของสาธารณรัฐเกาหลีใต้'/> </a><h5 style='padding:20px;background-color: #f1f2f2;box-shadow: 0 0 10px rgba(0,0,0,.15), 0 3px 3px rgba(0,0,0,.15);border-radius: 0px 0px 10px 10px;'><a style='padding-bottom:3px;' class='linenews' href='NewsReadBlog2.aspx?itemID=36109' '>กฎหมายพิเศษว่าด้วยการป้องกันความสูญเสียที่เกิดจากการฉ้อโกงทางการเงินที่ใช้วิธีการทางโทรคมนาคมและการคืนเงินสำหรับความสูญเสียของสาธารณรัฐเกาหลีใต้</a></h5></div></div>
-
-
-
-
-                         
-                             </div>
-                    </div>
-
-                        
-
-
-                              
-                              
-                           
-
-
-
-                             </div>
-
-		  				</div>
-		  			
-		  		</section>
-
-    <section class="fullwidth-row2" style="background-color:#eec9f3">
-			  		<div class="container-fluid content-padding-xl content-padding-mobile-xs">
-			  			<div class="row animated" style="padding-left:10px;padding-right:10px;" >
-                              <div class="col-lg-4 col-lg-offset-2 form-group animated">
-
-                                  <h2 class="text-left" style="color: #333; font-weight: 700;font-family: 'Athiti', sans-serif;">UP Clip | <a style="color: #333" href="NewsTopClipAll.aspx"><span style="font-size: 16px; color: #333; font-weight: 700;font-family: 'Athiti', sans-serif;">UP Clip ทั้งหมด</span></a></h2>
-                                  <div class="row" style="padding-top: 30px;">
-
-
-
-                                      
- <div class='col-sm-6 col-md-6 col-lg-6 form-group'><img style='width:100%' src='images_news/Thumb3/เม็ดฟู่ยาอดยาบ้า_638931132538583383.jpeg' class='rrrr' alt='UP Highlight: "เม็ดฟู่" นวัตกรรมบำบัดผู้ติดแอมเฟตามีน [EP.1]'/><h5><a style='padding-bottom:3px;color:#333;padding-top:5px;' class='linenews underline-on-hover' href='NewsReadVDO.aspx?itemID=35568' '>UP Highlight: "เม็ดฟู่" นวัตกรรมบำบัดผู้ติดแอมเฟตามีน [EP.1]</a></h5><span class='' style='color:#333;font-size: 12px;margin-bottom:10px;margin-right:5px;'><a  href='UP_News.aspx?StrategicID=1' style='text-decoration: underline;color: #333;'>#ด้านการเตรียมคน</a>&nbsp;&nbsp;&nbsp;&nbsp; <i class='fa fa-clock-o'></i>&nbsp;10 ก.ย. 2568&nbsp;&nbsp</span></div> <div class='col-sm-6 col-md-6 col-lg-6 form-group'><img style='width:100%' src='images_news/Thumb3/โครงการตักบาตรน้องใหม่ ปีการศึกษา 2568_638863788856794891.jpg' class='rrrr' alt='มหาวิทยาลัยพะเยาจัดกิจกรรม “ตักบาตรน้องใหม่” ต้อนรับนิสิตใหม่ ปีการศึกษา 2568 เสริมสิริมงคลและสร้างอัตลักษณ์ UP Identity'/><h5><a style='padding-bottom:3px;color:#333;padding-top:5px;' class='linenews underline-on-hover' href='NewsReadVDO.aspx?itemID=34773' '>มหาวิทยาลัยพะเยาจัดกิจกรรม “ตักบาตรน้องใหม่” ต้อนรับนิสิตใหม่ ปีการศึกษา 2568 เสริมสิริมงคลและสร้างอัตลักษณ์ UP Identity</a></h5><span class='' style='color:#333;font-size: 12px;margin-bottom:10px;margin-right:5px;'><a  href='UP_News.aspx?StrategicID=4' style='text-decoration: underline;color: #333;'>#ด้านการทำนุบำรุงศิลปวัฒนธรรม</a>&nbsp;&nbsp;&nbsp;&nbsp; <i class='fa fa-clock-o'></i>&nbsp;24 มิ.ย. 2568&nbsp;&nbsp</span></div>
-
-
-<style>
-      .rrrr {
-        border-radius: 10px;
-    }
-
-      .underline-on-hover:hover {
-    text-decoration: underline;
-}
-</style>
-
-
-                                  </div>
-
-
-
-
-
-                       
-
-
-
-
-                              </div>
-
-                                 <div class="col-lg-4  form-group animated">
-
-                                  <h2 class="text-left" style="color: #333; font-weight: 700;font-family: 'Athiti', sans-serif;">UP Clipping News | <a style="color: #333" href="ClippingNews.aspx"><span style="font-size: 16px; color: #333; font-weight: 700;font-family: 'Athiti', sans-serif;">Clipping News ทั้งหมด</span></a></h2>
-                                  <div class="row" style="padding-top: 30px;">
-
-
-                                      
- <div class='col-sm-6 col-md-6 col-lg-6 form-group'><a href='NewsReadClipping.aspx?itemID=29907'><img style='width:100%' src='images_news/Thumb3/logo2 copy_638273477332615032.jpg' class='rrrr' alt='ม.พะเยา ปลื้ม อว.ชื่นชมผลงานพัฒนาชุมชนเชิงพื้นที่
-'/></a>	<a href='NewsReadClipping.aspx?itemID=29907'><h5><a style='padding-bottom:3px;color:#333;padding-top:10px;' class='linenews' href='NewsReadClipping.aspx?itemID=29907'>ม.พะเยา ปลื้ม อว.ชื่นชมผลงานพัฒนาชุมชนเชิงพื้นที่
-</h5></a><span class='' style='color:#333;font-size: 12px;margin-bottom:10px;margin-right:5px;'><a  href='UP_News.aspx?StrategicID=2' style='text-decoration: underline;color: #333;'>#ด้านการสร้างงานวิจัยและนวัตกรรม</a>&nbsp;&nbsp;&nbsp;&nbsp; <i class='fa fa-clock-o'></i>&nbsp;11 ส.ค. 2566&nbsp;&nbsp;&nbsp;</span></div> <div class='col-sm-6 col-md-6 col-lg-6 form-group'><a href='NewsReadClipping.aspx?itemID=29904'><img style='width:100%' src='images_news/Thumb3/fijlnsuxyz27_638273463540475246.png' class='rrrr' alt='ม.พะเยา ชวนนิสิตรุ่นใหม่จับมือเดินหน้าปลูกป่า'พาน้องไปยิงก๋ง''/></a>	<a href='NewsReadClipping.aspx?itemID=29904'><h5><a style='padding-bottom:3px;color:#333;padding-top:10px;' class='linenews' href='NewsReadClipping.aspx?itemID=29904'>ม.พะเยา ชวนนิสิตรุ่นใหม่จับมือเดินหน้าปลูกป่า'พาน้องไปยิงก๋ง'</h5></a><span class='' style='color:#333;font-size: 12px;margin-bottom:10px;margin-right:5px;'><a  href='UP_News.aspx?StrategicID=5' style='text-decoration: underline;color: #333;'>#ด้านการพัฒนาระบบบริหารจัดการ</a>&nbsp;&nbsp;&nbsp;&nbsp; <i class='fa fa-clock-o'></i>&nbsp;11 ส.ค. 2566&nbsp;&nbsp;&nbsp;</span></div>
-
-
-<style>
-
-    .rrrr {
-        border-radius: 10px;
-    }
-
-    
-      .underline-on-hover:hover {
-    text-decoration: underline;
-}
-    
-
-</style>
-                              
-
-                                  </div>
-
-
-
-
-
-
-
-
-
-
-                              </div>
-
-                        
-
-
-			  				
-			  			</div>
-			  		
-                              </div>
-			  	</section>
-
-
-     
-
- <div class='modal fade' id='myModal' tabindex='-1' role='dialog'><div class='modal-lg center-block' role='document'><div class='modal-content'><div class='modal-header'><h5 class='modal-title'></h5><button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button></div><div class='modal-body'><div id='myCarousel' class='carousel slide' data-ride='carousel'><ol class='carousel-indicators'></ol><div class='carousel-inner'><div class='item active'><a href='#'> <img alt='Q' class='animated img-responsive' style='width:100%' src='https://addnews.up.ac.th/FileUpload/1000031142_638971766174526944.png'></a> <p></p></div></div> <a class='left carousel-control' href='#myCarousel' data-slide='prev'> <span style='padding-top:150%;font-size: 8.8rem;color: #8c8c8c;' class='glyphicon fa fa-angle-left fa-5'></span> <span class='sr-only'>Previous</span></a><a class='right carousel-control' href='#myCarousel' data-slide='next'><span style='padding-top:150%;font-size: 8.8rem;color: #8c8c8c;' class='glyphicon fa fa-angle-right fa-5'></span><span class='sr-only'>Next</span></a></div></div><div class='modal-footer'><button type='button' class='btn btn-secondary' data-dismiss='modal'>ปิดเพื่อเข้าสู่เว็บไซต์</button></div></div></div></div> <script>$(document).ready(function () {$('#myModal').modal('show');});</script>
-                
-
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<!-- เรียกใช้ Swiper -->
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 2.2, // จำนวนที่เห็นพร้อมกันบนมือถือ
-        spaceBetween: 10,   // ช่องว่างระหว่างภาพ
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
-        },
-        breakpoints: {
-            768: {
-                slidesPerView: 3.2
-            },
-            992: {
-                slidesPerView: 4
+                try {
+                    localStorage.setItem(userThemeKey, theme);
+                } catch (e) {
+                    console.warn('LocalStorage is unavailable. Theme preference will not be saved.');
+                }
             }
-        }
-    });
-</script>
-  
 
-     
-   
+            /**
+             * ตรวจสอบธีมที่บันทึกไว้ หรือธีมของระบบ
+             * @returns {string} - 'dark' หรือ 'light'
+             */
+            function getInitialTheme() {
+                let savedTheme;
+                try {
+                     savedTheme = localStorage.getItem(userThemeKey);
+                } catch (e) {
+                    savedTheme = null;
+                }
+                
+                // 1. ตรวจสอบ LocalStorage ก่อน
+                if (savedTheme) {
+                    return savedTheme;
+                }
 
-				
-			</article><!-- #content -->  	
-	  		<!-- #footer -->	
-		</div><!-- #site -->
-		
-	
-      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+                // 2. ถ้าไม่มี ให้ใช้ค่าที่ระบบตั้งไว้ (prefers-color-scheme)
+                if (systemPrefersDark.matches) {
+                    return 'dark';
+                }
 
-        <style>
-            .btn-warning {
-    color: #fff;
-    background-color: #6d5b40!important;
-    border-color: #382c1c!important;
-}
-            .label-warning {
-    background-color: #6d5b40!important;
-    border-color: #382c1c!important;
-}
-        </style>
-       
-<footer id="footer" role="contentinfo" style="background: rgb(64 55 68); padding: 2.5rem 0 1rem 0; color: #fff;">
-  <div class="container">
-    <div class="row">
-
-      <!-- ลิงค์เกี่ยวข้อง -->
-      <div class="col-sm-4">
-        <h4 class="text-warning" style="color:#ffffff;font-family: 'Athiti', sans-serif;"><i class="fa fa-link"></i> ลิงค์เกี่ยวข้อง</h4>
-        <ul class="list-unstyled">
-          <li class="pb-2" style="border-bottom: 1px dotted #fff;">
-            <i class="fa fa-book text-warning"></i>
-            <a style="font-family: 'Athiti', sans-serif;" href="https://updc.up.ac.th/" class="text-white"> ฐานข้อมูลคลังปัญญา Digital Collections</a>
-          </li>
-          <li class="pb-2" style="border-bottom: 1px dotted #fff;">
-            <i class="fa fa-database text-warning"></i>
-            <a style="font-family: 'Athiti', sans-serif;"  href="https://dms.up.ac.th/data/inbox.aspx" class="text-white"> UP-DMS</a>
-          </li>
-          <li class="pb-2" style="border-bottom: 1px dotted #fff;">
-            <i class="fa fa-pencil-square text-warning"></i>
-            <a style="font-family: 'Athiti', sans-serif;"  href="https://li01.tci-thaijo.org/index.php/journalup" class="text-white"> วารสารนเรศวรพะเยา</a>
-          </li>
-          <li class="pb-2" style="border-bottom: 1px dotted #fff;">
-            <i class="fa fa-graduation-cap text-warning"></i>
-            <a style="font-family: 'Athiti', sans-serif;"  href="https://so03.tci-thaijo.org/index.php/Humanties-up" class="text-white"> วารสารมนุษยศาสตร์ฯ</a>
-          </li>
-          <li class="pb-2" style="border-bottom: 1px dotted #fff;">
-            <i class="fa fa-users text-warning"></i>
-            <a style="font-family: 'Athiti', sans-serif;"  href="https://tqf.up.ac.th/present/instructor_edu_acm" class="text-white"> ระบบข้อมูลคุณวุฒิอาจารย์</a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- เยี่ยมชมมหาวิทยาลัย -->
-      <div class="col-sm-4">
-        <h4 class="text-warning" style="color:#ffffff;font-family: 'Athiti', sans-serif;"><i class="fa fa-eye"></i> เยี่ยมชมมหาวิทยาลัยพะเยา</h4>
-        <ul class="list-unstyled">
-          <li class="pb-2" style="border-bottom: 1px dotted #fff;">
-            <i class="fa fa-video-camera text-warning"></i>
-            <a href="https://vrtour.up.ac.th/" class="text-white"> 360 UP VR-Tour</a>
-          </li>
-        </ul>
-          <br />
-        <h4 class="text-warning" style="color:#ffffff;font-family: 'Athiti', sans-serif;"><i class="fa fa-user"></i> หน่วยงานนิสิต</h4>
-        <ul class="list-unstyled">
-          <li class="pb-2" style="border-bottom: 1px dotted #fff;">
-            <i class="fa fa-user-circle text-warning"></i>
-            <a style="font-family: 'Athiti', sans-serif;"  href="https://dsa.up.ac.th/scup/" class="text-white"> สภานิสิต</a>
-          </li>
-          <li class="pb-2" style="border-bottom: 1px dotted #fff;">
-            <i class="fa fa-group text-warning"></i>
-            <a style="font-family: 'Athiti', sans-serif;"  href="https://www.facebook.com/UPSTUDENTUNION/" class="text-white"> องค์การนิสิต</a>
-          </li>
-          <li class="pb-2" style="border-bottom: 1px dotted #fff;">
-            <i class="fa fa-home text-warning"></i>
-            <a style="font-family: 'Athiti', sans-serif;"  href="https://www.facebook.com/เวียง-มหาวิทยาลัยพะเยา-2281442375404137/" class="text-white"> เวียง</a>
-          </li>
-          <li class="pb-2" style="border-bottom: 1px dotted #fff;">
-            <i class="fa fa-shield text-warning"></i>
-            <a style="font-family: 'Athiti', sans-serif;"  href="https://www.facebook.com/สารวัตรนิสิต-มหาวิทยาลัยพะเยา-168783297003068/" class="text-white"> สารวัตรนิสิต</a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- ข้อมูลติดต่อ -->
-      <div class="col-sm-4">
-        <img src="images/มหาวิทยาลัยพะเยา.png" class="img-responsive" alt="มหาวิทยาลัยพะเยา">
-          <br />
-        <p style="font-family: 'Athiti', sans-serif;">มหาวิทยาลัยพะเยา<br>
-        19 หมู่ 2 ต.แม่กา อ.เมืองพะเยา จ.พะเยา 56000<br>
-        โทร. 0 5446 6666 - 70<br>
-        โทรสาร 0 5446 6690</p>
-
-        <p>ช่องทางอิเล็กทรอนิกส์: <a href="mailto:saraban@up.ac.th" class="text-warning">saraban@up.ac.th</a><br>
-        <a style="font-family: 'Athiti', sans-serif;"  href="electronic-channels.aspx" class="text-warning">ลิงค์ประกาศอิเล็กทรอนิกส์</a></p>
-          <br />
-        <p class="mt-3">
-          <a href="https://www.messenger.com/t/100087853284272/" class="btn btn-warning btn-lg btn-block" target="_blank">
-            <i   class="fa fa-comments"></i> ถาม - ตอบ
-          </a>
-        </p>
-
-       <br />
-
-        <!-- Social Icons -->
-        <div class="mt-3">
-          <a href="https://www.facebook.com/%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B8%9E%E0%B8%B0%E0%B9%80%E0%B8%A2%E0%B8%B2-139914136032721/"><img src="social/facebook_icon.png" width="32"></a>
-          <a href="https://www.instagram.com/university_of_phayao/?hl=th"><img src="social/insta_icon.png" width="32"></a>
-          <a href="https://www.youtube.com/channel/UCswzTPm8nKRSxPEVpMgS99A/featured"><img src="social/youtube_icon.png" width="32"></a>
-          <a href="https://line.me/R/ti/p/%40266smbie"><img src="social/line_icon.png" width="32"></a>
-          <a href="https://twitter.com/UP_university"><img src="social/twitter_icon.png" width="32"></a>
-          <a href="https://www.tiktok.com/@uptiktok2025?lang=en"><img src="social/tiktok_icon.png" width="32"></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="text-center" style="margin-top:30px; padding-top:15px; border-top: 1px dotted #fff;">
-      <small style="font-family: 'Athiti', sans-serif;">&copy; 2025 มหาวิทยาลัยพะเยา. สงวนลิขสิทธิ์</small>  <a style="cursor:pointer; font-size:16px;font-family: 'Athiti', sans-serif;" class="label label-warning" data-cc="c-settings">
-            <i class="fa fa-gear"></i> Cookie preferences
-          </a>
-    </div>
-  </div>
-</footer>
-
-     
-          <script src="cookie-consent/cookie-consent/src/cookieconsent.js"></script>
-        <script src="cookie-consent/cookie-consent/init.js"></script>
-
-
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/dropdown-menu.min.js"></script>
-		<script src="js/waypoints.min.js"></script>
-		<script src="js/waypoints-sticky.min.js"></script>
-		<script src="js/jquery.velocity.min.js"></script>
-		<script src="js/velocity.ui.js"></script>
-		<script src="js/doubletaptogo.js"></script>
-		
-		
-	    <script src="js/bootstrap.datepicker.min.js"></script>
-	    <script src="js/jquery.stellar.min.js"></script>
-	    <script src="js/owl.carousel.min.js"></script>
-        <script src="js/JavaScripttouch.js"></script>
-	 
-	    <script src="js/main.js"></script>
-        <script>
-            function openMessenger() {
-                window.open('https://www.messenger.com/t/100087853284272/', 'messenger', 'top=0, left=' + (screen.width - 500) + ', width=2000, height=' + screen.height);
-                document.body.classList.add('inactive');
-                setTimeout(function () {
-                    checkFocus = setInterval(function () {
-                        if (document.hasFocus()) {
-                            document.body.classList.remove('inactive');
-                            clearInterval(checkFocus);
-                        }
-                    }, 1)
-                }, 1000);
+                // 3. ค่าเริ่มต้นคือ Light
+                return 'light';
             }
-        </script>
-        
-    
-   
-     
-     <script>
-         $(document).ready(function () {
 
+            // 1. ตั้งค่าธีมเริ่มต้นเมื่อโหลดหน้า
+            const initialTheme = getInitialTheme();
+            applyTheme(initialTheme);
 
-      //       $('#myModal').modal('show');
-             //$('#vdo').prop('muted', true).play();
-              $(".gallery-carousel").owlCarousel({
-  			    items				: 1,
-  			    nav					: true,
-  			    stagePadding		: 3,
-  			    margin				: 5,
-  			    dots				: true,
-  			    loop: true,
-  			    autoplay: true,
-  			    autoplayTimeout: 3000,
-  			    autoplayHoverPause: true,
-              });
+            // 2. เพิ่ม Event Listener ให้ปุ่ม Toggle
+            themeToggle.addEventListener('change', () => {
+                const newTheme = themeToggle.checked ? 'dark' : 'light';
+                applyTheme(newTheme);
+            });
 
-              $(".carousel").swipe({
+            // 3. (Optional) เพิ่ม Event Listener หากผู้ใช้เปลี่ยนธีมระบบ
+            systemPrefersDark.addEventListener('change', (e) => {
+                // อัปเดตเฉพาะในกรณีที่ผู้ใช้ "ยังไม่ได้" เลือกธีมเอง (ไม่มีใน localStorage)
+                let savedTheme;
+                try {
+                    savedTheme = localStorage.getItem(userThemeKey);
+                } catch (e) {
+                    savedTheme = null;
+                }
 
-                  swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+                if (!savedTheme) {
+                    applyTheme(e.matches ? 'dark' : 'light');
+                }
+            });
+        });
+    </script>
 
-                      if (direction == 'left') $(this).carousel('next');
-                      if (direction == 'right') $(this).carousel('prev');
-
-                  },
-                  allowPageScroll: "vertical"
-
-              });
-
-
-            
-
-
-
-
-
-         });
-
-
-        </script>
-
-
-
-    <script src="assets/JavaScriptSlide.js"></script>
-     
- 
-   <script>
-       function adjustRightHeight() {
-           var leftBox = document.getElementById('leftBox');
-           var rightBoxes = document.querySelectorAll('.mini-news-each');
-           var height = leftBox.offsetHeight;
-
-           var eachHeight = Math.floor(height / 3);
-           rightBoxes.forEach(function (el) {
-               el.style.height = eachHeight + 'px';
-           });
-       }
-
-       window.addEventListener('load', adjustRightHeight);
-       window.addEventListener('resize', adjustRightHeight);
-  </script>
-
-
-
-    </form>
-<script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=3&cb=1735015206" async></script></body>
+</body>
 </html>
-
