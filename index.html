@@ -118,6 +118,29 @@
             to { transform: translate(-100px, -100px) rotate(-180deg); }
         }
 
+        /* NEW: Animations for load-in */
+        @keyframes fadeInSlideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
 
         /* 3. Layout & Main Components */
         .container {
@@ -133,14 +156,16 @@
             padding: 1rem 1.5rem;
             position: sticky;
             top: 0;
-            /* OLD: background-color: var(--card-bg); */
             background-color: rgba(var(--card-bg-rgb), 0.75); /* Glass Effect */
             backdrop-filter: blur(15px); /* Glass Effect */
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
             z-index: 10;
-            /* OLD: border-bottom: 1px solid var(--border-color); */
             border-bottom: 1px solid var(--border-color); /* ใช้ border-color ที่โปร่งแสง */
             transition: background-color 0.3s ease, border-color 0.3s ease;
+            
+            /* NEW: Load-in animation */
+            animation: fadeInDown 0.6s 0.1s ease-out forwards;
+            opacity: 0; /* Start hidden for animation */
         }
 
         nav ul {
@@ -161,7 +186,6 @@
         }
 
         main > section {
-            /* OLD: background-color: var(--card-bg); */
             background-color: rgba(var(--card-bg-rgb), 0.7); /* Glass Effect */
             backdrop-filter: blur(20px); /* Glass Effect */
             border-radius: 16px; /* มนขึ้นเล็กน้อย */
@@ -169,9 +193,24 @@
             padding: 2.5rem;
             margin-top: 2rem;
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
-            /* OLD: border: 1px solid var(--border-color); */
             border: 1px solid var(--border-color); /* ใช้ border-color ที่โปร่งแสง */
+            
+            /* NEW: Load-in animation */
+            animation: fadeInSlideUp 0.6s ease-out forwards;
+            opacity: 0; /* Start hidden for animation */
         }
+
+        /* NEW: Staggered animation delays (หน่วงเวลาให้แสดงผลไม่พร้อมกัน) */
+        #home {
+            animation-delay: 0.3s;
+        }
+        #about {
+            animation-delay: 0.5s;
+        }
+        #contact {
+            animation-delay: 0.7s;
+        }
+
 
         footer {
             text-align: center;
